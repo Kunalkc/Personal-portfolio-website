@@ -10,13 +10,143 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./components/devcomponents/App.js":
+/*!*****************************************!*\
+  !*** ./components/devcomponents/App.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ app)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Filenav_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Filenav.js */ \"./components/devcomponents/Filenav.js\");\n/* harmony import */ var _Header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header.js */ \"./components/devcomponents/Header.js\");\n/* harmony import */ var _Sidebar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Sidebar.js */ \"./components/devcomponents/Sidebar.js\");\n/* harmony import */ var _Tabs_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Tabs.js */ \"./components/devcomponents/Tabs.js\");\n/* harmony import */ var _Console_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Console.js */ \"./components/devcomponents/Console.js\");\n/* harmony import */ var _Codearea_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Codearea.js */ \"./components/devcomponents/Codearea.js\");\n\n\n\n\n\n\n\nfunction app() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"resume-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Tabs_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Filenav_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Sidebar_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Codearea_js__WEBPACK_IMPORTED_MODULE_6__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Console_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null));\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/App.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Codearea.js":
+/*!**********************************************!*\
+  !*** ./components/devcomponents/Codearea.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ codearea)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Resumecontent_Experience__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Resumecontent/Experience */ \"./components/devcomponents/Resumecontent/Experience.js\");\n/* harmony import */ var _Resumecontent_Education__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Resumecontent/Education */ \"./components/devcomponents/Resumecontent/Education.js\");\n/* harmony import */ var _Resumecontent_projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Resumecontent/projects */ \"./components/devcomponents/Resumecontent/projects.js\");\n/* harmony import */ var _Resumecontent_Skills__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Resumecontent/Skills */ \"./components/devcomponents/Resumecontent/Skills.js\");\n/* harmony import */ var _Resumecontent_About__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Resumecontent/About */ \"./components/devcomponents/Resumecontent/About.js\");\n/* harmony import */ var _Resumecontent_Contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Resumecontent/Contact */ \"./components/devcomponents/Resumecontent/Contact.js\");\n\n\n\n\n\n\n\nfunction codearea() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"codearea\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Resumecontent_About__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Resumecontent_Skills__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Resumecontent_Experience__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Resumecontent_projects__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Resumecontent_Education__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Resumecontent_Contact__WEBPACK_IMPORTED_MODULE_6__[\"default\"], null));\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Codearea.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Console.js":
+/*!*********************************************!*\
+  !*** ./components/devcomponents/Console.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Console)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Console() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"Console\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Console.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Filenav.js":
+/*!*********************************************!*\
+  !*** ./components/devcomponents/Filenav.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Filebar)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Filebar() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"file-bar\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Filenav.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Header.js":
+/*!********************************************!*\
+  !*** ./components/devcomponents/Header.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction header() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"head-bar\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Header.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Resumecontent/About.js":
+/*!*********************************************************!*\
+  !*** ./components/devcomponents/Resumecontent/About.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ About)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction About() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"basicbox about\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Resumecontent/About.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Resumecontent/Contact.js":
+/*!***********************************************************!*\
+  !*** ./components/devcomponents/Resumecontent/Contact.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Contact)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Contact() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"basicbox contact\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Resumecontent/Contact.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Resumecontent/Education.js":
+/*!*************************************************************!*\
+  !*** ./components/devcomponents/Resumecontent/Education.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Education)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Education() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"basicbox education\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Resumecontent/Education.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Resumecontent/Experience.js":
+/*!**************************************************************!*\
+  !*** ./components/devcomponents/Resumecontent/Experience.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Experience)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Experience() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"basicbox experience\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Resumecontent/Experience.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Resumecontent/Skills.js":
+/*!**********************************************************!*\
+  !*** ./components/devcomponents/Resumecontent/Skills.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Skills)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Skills() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"basicbox skills\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Resumecontent/Skills.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Resumecontent/projects.js":
+/*!************************************************************!*\
+  !*** ./components/devcomponents/Resumecontent/projects.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Projects)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Projects() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"basicbox projects\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Resumecontent/projects.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Sidebar.js":
+/*!*********************************************!*\
+  !*** ./components/devcomponents/Sidebar.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Sidebar)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Sidebar() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"side-bar\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Sidebar.js?");
+
+/***/ }),
+
+/***/ "./components/devcomponents/Tabs.js":
+/*!******************************************!*\
+  !*** ./components/devcomponents/Tabs.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Tabs)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Tabs() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"tabs\"\n  });\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/devcomponents/Tabs.js?");
+
+/***/ }),
+
 /***/ "./dev.js":
 /*!****************!*\
   !*** ./dev.js ***!
   \****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n\n\nconst root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById(\"root\"));\nfunction App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"hola welcome to the dev portfolio page\");\n}\nroot.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));\n\n//# sourceURL=webpack://personal-portfolio-website/./dev.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _components_devcomponents_App_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/devcomponents/App.js */ \"./components/devcomponents/App.js\");\n\n\n\nconst root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById(\"root\"));\nroot.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_devcomponents_App_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\n//# sourceURL=webpack://personal-portfolio-website/./dev.js?");
 
 /***/ }),
 
