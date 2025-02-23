@@ -178,17 +178,20 @@ body{
 }
 .tab-item{
     position: relative;
-    min-width: 7vw;
+    min-width: 3vw;
     width: auto;
     height: auto;
     padding: 1rem;
+    padding-right: 0.3rem;
     text-wrap: nowrap;
     text-align: center;
     font-size: 70%;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
     border-right: 0.5px solid var(--BORDERCOLOR);
     border-bottom: 0.5px solid var(--BORDERCOLOR);
@@ -212,10 +215,11 @@ body{
 }
 
 .close-icon{
-    position: absolute;
+  /*   position: absolute;
     right: 2px;
-    top:2px;
+    top:2px; */
     opacity: 0;
+    margin-right: 0;
     /* width: 5px;
     height: 5px; */
 }
