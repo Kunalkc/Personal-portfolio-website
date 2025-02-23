@@ -14,6 +14,8 @@ export default function app(){
 
     function selector(name){
 
+        console.log("selected")
+
         setTabstate((prevState) => {
             const newTabState = new Map(prevState); // Make a copy
             newTabState.forEach((value, mapKey) => {
@@ -27,7 +29,9 @@ export default function app(){
           });
     }
 
-    function removefromTab(name){
+    function removefromTab(name,event){
+        event.stopPropagation();
+        console.log("removed")
 
           setTabstate((prevState) => {
             const newTabState = new Map(prevState); // Make a copy
