@@ -166,6 +166,10 @@ body{
     background-color: rgba(240, 248, 255, 0.186);
     border-left: 4px solid rgb(100, 167, 168);
 }
+.selected-file:hover{
+    background-color: rgba(240, 248, 255, 0.186);
+    border-left: 4px solid rgb(100, 167, 168);
+}
 /* TABS */
 
 .tabs{
