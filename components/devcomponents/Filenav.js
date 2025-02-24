@@ -12,7 +12,8 @@ export default function Filebar(props){
  */
   return(
     <div className="file-bar">
-      <h2 className="filebar-title">Files</h2>
+
+      { !props.colorTab&& <> <h2 className="filebar-title">Files</h2>
      
       <div onClick={()=>props.select("Full Resume")} className={`filebar-item ${props.tabState.get("Full Resume").selected ? "selected-file" : ""}`}>
         <p>Full Resume</p>
@@ -35,6 +36,22 @@ export default function Filebar(props){
       <div onClick={()=>props.select("Contact")} className={`filebar-item ${props.tabState.get("Contact").selected ? "selected-file" : ""}`}>
         <p>Contact</p>
       </div>
+      </>
+      }
+
+      {
+        props.colorTab && <>
+        <h2 className="filebar-title">Themes</h2>
+
+      <div className="themesection">
+
+        <div onClick={()=>props.setTheme("Aqua")} className={`theme-item ${props.tabState.get("Education").selected ? "selected-file" : ""}`}>
+        <p>Aqua</p>
+       </div>
+
+       </div> 
+        </>
+      }
 
     </div>
   )

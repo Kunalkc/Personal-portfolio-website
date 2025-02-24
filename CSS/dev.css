@@ -7,6 +7,10 @@
 
 :root{
     --BORDERCOLOR: rgb(130, 130, 130);
+    --HIGHLIGHTEDTABCOLOR: rgb(100, 167, 168);
+    --CODEAREACOLOR: ;
+    --FILENAVAREACOLOR: ;
+
     --INSIDESHADOW: rgba(20, 19, 19, 0.66);
 }
 
@@ -78,7 +82,30 @@ body{
     grid-row: 2/5;
     grid-column: 1/2;
     background-color: #252526;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  space-between
 }
+.side-bar-top{
+    display: flex;
+    flex-direction: column;
+}
+.fileiconimage{
+    margin-top: 1rem;
+    margin-right: 0;
+    padding-right: 0.4rem;
+    padding-left: 0.1rem;
+    display: block;
+    opacity: 0.8;
+}
+.selected-section{
+    /* background-color: rgba(240, 248, 255, 0.271); */
+    border-left: 6px solid rgb(100, 167, 168);
+    opacity: 1;
+}
+
 
 .Console{
     grid-row: 4/5;
@@ -91,7 +118,7 @@ body{
 .codearea{
     grid-row: 3/4;
     grid-column: 3/4;
-    background-color: 	#2d2d30;
+    background-color: 	rgb(12, 17, 23);
     overflow-x: auto;
 }
 
@@ -170,6 +197,21 @@ body{
     background-color: rgba(240, 248, 255, 0.186);
     border-left: 4px solid rgb(100, 167, 168);
 }
+
+.themesection{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.theme-item{
+    width:80%;
+    height: 10%;
+    background-color: rgb(255, 0, 0);
+}
+
 /* TABS */
 
 .tabs{
@@ -210,12 +252,12 @@ body{
 }
 
 .selected-tab{
-    background-color: 	#2d2d30; /* intentionally put the same as code area */
+    background-color: 	rgb(12, 17, 23); /* intentionally put the same as code area */
     border-bottom: none;
     border-top: 4px solid rgb(100, 167, 168);
 }
 .selected-tab:hover {
-    background-color: 	#2d2d30;
+    background-color: 		rgb(12, 17, 23);
 }
 
 .close-icon{

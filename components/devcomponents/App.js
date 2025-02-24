@@ -11,6 +11,21 @@ import Filedata from "./Resumecontent/data.js"   // we have added all out data a
 
 export default function app(){
     const [tabs , setTabstate]  = React.useState(Filedata.files)
+    const [colors, setColor] = React.useState({
+        Aqua: true,
+        Red: false,
+        Green: false,
+        Darkblue: false,
+        creamwhite: false
+    })
+    const [themesOpen , setSection] = React.useState(true)   //we are just using one flip switch to toggle sections if further new sections are to be added need to use a different data structure
+
+    function toggleThememenu(string){
+
+        if(string === "Files"){setSection(false)}
+        if(string === "Themes"){setSection(true)}
+
+    }
 
     function selector(name){
 
@@ -51,10 +66,16 @@ export default function app(){
             />
 
             <Filenav
-                tabState = {tabs}
+                tabState = {tabs}  //keeps track of which tabs are open initial data taken from file
                 select = {selector}
+                colors = {colors}
+                colorTab = {themesOpen}
+                setTheme ={setColor}
             />
-            <Sidebar/>
+            <Sidebar
+                colorTab = {themesOpen}
+                changeSection = {toggleThememenu}
+            />
 
             <Codearea
                 tabState = {tabs}
