@@ -18,9 +18,11 @@ export default function Filebar(props){
       <div onClick={()=>props.select("Full Resume")} className={`filebar-item ${props.tabState.get("Full Resume").selected ? "selected-file" : ""}`}>
         <p>Full Resume</p>
       </div>
+
       <div onClick={()=>props.select("Education")} className={`filebar-item ${props.tabState.get("Education").selected ? "selected-file" : ""}`}>
         <p>Education</p>
       </div>
+
       <div onClick={()=>props.select("Experience")} className={`filebar-item ${props.tabState.get("Experience").selected ? "selected-file" : ""}`}>
         <p>Experience</p>
       </div>
@@ -45,8 +47,20 @@ export default function Filebar(props){
 
       <div className="themesection">
 
-        <div onClick={()=>props.setTheme("Aqua")} className={`theme-item ${props.tabState.get("Education").selected ? "selected-file" : ""}`}>
+        <div onClick={()=>props.setTheme("Aqua")} className={`theme-item Aqua ${props.colors.get("Aqua") ? "selected-theme" : ""}`}>
         <p>Aqua</p>
+       </div>
+        <div onClick={()=>props.setTheme("Bloodymary")} className={`theme-item  Bloodymary ${props.colors.get("Bloodymary") ? "selected-theme" : ""}`}>
+        <p>Bloody Mary</p>
+       </div>
+        <div onClick={()=>props.setTheme("Thematrix")} className={`theme-item Thematrix ${props.colors.get("Thematrix") ? "selected-theme" : ""}`}>
+        <p>The Matrix</p>
+       </div>
+        <div onClick={()=>props.setTheme("Thespacedeck")} className={`theme-item Thespacedeck ${props.colors.get("Thespacedeck") ? "selected-theme" : ""}`}>
+        <p>Millennium Falcon</p>
+       </div>
+        <div onClick={()=>props.setTheme("Vanilla")} className={`theme-item  Vanilla ${props.colors.get("Vanilla") ? "selected-theme" : ""}`}>
+        <p>Vanilla</p>
        </div>
 
        </div> 
