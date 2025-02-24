@@ -64,8 +64,8 @@ export default function app(){
             document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(49, 26, 9)');
             document.documentElement.style.setProperty('--HEADERCOLOR', 'rgb(36, 17, 17)');
             document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(9, 6, 22)');
-            document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(210, 217, 222)');
-            document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(20, 20, 20)');
+            document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(214, 191, 191)');
+            document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
 
         } 
         if(colors.get("Thematrix")) {
@@ -75,9 +75,9 @@ export default function app(){
             document.documentElement.style.setProperty('--CODEAREACOLOR', 'rgb(0, 6, 0)');
             document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(21, 22, 29)');
             document.documentElement.style.setProperty('--HEADERCOLOR', 'rgb(0, 0, 0)');
-            document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(30, 30, 30)');
+            document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(0, 0, 0)');
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(209, 255, 200)');
-            document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(20, 20, 20)');
+            document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
 
         } 
         if(colors.get("Thespacedeck")) {
@@ -105,7 +105,7 @@ export default function app(){
 
     }, [colors]);
 
-    const [themesOpen , setSection] = React.useState(true)   //we are just using one flip switch to toggle sections if further new sections are to be added need to use a different data structure
+    const [themesOpen , setSection] = React.useState(false)   //we are just using one flip switch to toggle sections if further new sections are to be added need to use a different data structure
     function toggleThememenu(string){ // changing the section in filenav 
 
         if(string === "Files"){setSection(false)}
