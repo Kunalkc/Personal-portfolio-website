@@ -60,7 +60,7 @@ export default function Filebar(props){
         <p>Millennium Falcon</p>
        </div>
         <div onClick={()=>props.setTheme("Vader")} className={`theme-item  Vader ${props.colors.get("Vader") ? "selected-theme" : ""}`}>
-        <p>Vader</p>
+        <p> Darth Vader</p>
        </div>
 
        </div> 

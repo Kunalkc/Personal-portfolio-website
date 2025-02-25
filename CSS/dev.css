@@ -5,6 +5,15 @@
     color:var(--FONTCOLOR);
 }
 
+/* .vader-transition * {
+    transition: all 3s linear;
+    
+} */
+
+/* things i do for perfection just to apply a darth vader theme lol */
+.vader-transition * {
+    transition: border-color 1s linear, background-color 3s linear, box-shadow 1s linear, color 0.3s linear;;
+}
 :root{
     
 
@@ -20,6 +29,8 @@
     --FONTCOLOR: rgb(210, 217, 222);
     --TABBARCOLOR:rgb(20, 20, 20);
     --FILEBAR: rgb(37, 37, 37);
+    --INSIDECONTENTBOXCOLOR: rgb(50, 50, 50);
+    --INSIDEBOXSHADOW:rgb(22, 21, 21);
 
     --INSIDESHADOW: rgba(20, 19, 19, 0.66);
 }
@@ -95,16 +106,16 @@ body{
 .cover{
     z-index: 2;
     position: relative;
-  top: 0;
+  left: 0;
   bottom: 0;
   width: 100vw;
   height: 100%;
   background-color: rgb(0, 0, 0);
-  animation: reveal 7s forwards;
+  animation: reveal 10s forwards;
 }
 @keyframes reveal {
     from {
-      height: 100%;
+      height: 80%;
     }
     to {
       height: 0%;
@@ -156,8 +167,8 @@ body{
 }
 
 .basicbox{
-    background-color: #323232;
-    box-shadow: 4px 4px 5px 5px rgb(22, 21, 21);
+    background-color: var(--INSIDECONTENTBOXCOLOR);
+    box-shadow: 4px 4px 5px 5px var(--INSIDEBOXSHADOW);
     min-height: 200px;
     min-width: 600px;
     max-width: 60%;
@@ -205,6 +216,9 @@ body{
     align-self: flex-start;
     display: block;
     width: 100%;
+
+   
+    /* transition: border-color 3s linear; */
 }
 
 .filebar-item{
@@ -247,6 +261,9 @@ body{
     width:80%;
     height: 10%;
     background-color: rgb(255, 0, 0);
+
+    box-shadow: 1px 4px 4px 4px var(--INSIDEBOXSHADOW);
+
     border-radius: 5px;
     display: flex;
     flex-direction: column;

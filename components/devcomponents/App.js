@@ -41,6 +41,8 @@ export default function app(){
     }
 
     // to apply the change in color
+
+
     React.useEffect(() => {
 
         console.log("i ran bitch")
@@ -55,7 +57,8 @@ export default function app(){
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(210, 217, 222)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(20, 20, 20)');
             document.documentElement.style.setProperty('--FILEBAR', 'rgb(37, 37, 37)');
-            
+            document.documentElement.style.setProperty('--INSIDECONTENTBOXCOLOR', 'rgb(50, 50, 50)');
+            document.documentElement.style.setProperty('--INSIDEBOXSHADOW', 'rgb(22, 21, 21)');
 
         } 
         if(colors.get("Bloodymary")) {
@@ -69,7 +72,8 @@ export default function app(){
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(214, 191, 191)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
             document.documentElement.style.setProperty('--FILEBAR', 'rgb(37, 37, 37)');
-
+            document.documentElement.style.setProperty('--INSIDECONTENTBOXCOLOR', 'rgb(50, 50, 50)');
+            document.documentElement.style.setProperty('--INSIDEBOXSHADOW', 'rgb(22, 21, 21)');
         } 
         if(colors.get("Thematrix")) {
 
@@ -82,19 +86,22 @@ export default function app(){
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(123, 255, 97)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
             document.documentElement.style.setProperty('--FILEBAR', 'rgb(0, 0, 0)');
-
+            document.documentElement.style.setProperty('--INSIDECONTENTBOXCOLOR', 'rgb(50, 50, 50)');
+            document.documentElement.style.setProperty('--INSIDEBOXSHADOW', 'rgb(38, 102, 16)');
         } 
         if(colors.get("Thespacedeck")) { //Spacedeck is millenuim falcon
 
             document.documentElement.style.setProperty('--THEME', 'rgb(45, 40, 97)');
-            document.documentElement.style.setProperty('--BORDERCOLOR', 'rgb(130, 130, 130)');
+            document.documentElement.style.setProperty('--BORDERCOLOR', 'rgb(44, 76, 164)');
             document.documentElement.style.setProperty('--CODEAREACOLOR', 'rgb(12, 17, 23)');
-            document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(37, 37, 38)');
-            document.documentElement.style.setProperty('--HEADERCOLOR', 'rgb(34, 31, 31)');
-            document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(30, 30, 30)');
+            document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(66, 66, 66)');
+            document.documentElement.style.setProperty('--HEADERCOLOR', 'rgb(33, 33, 40)');
+            document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(38, 37, 56)');
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(210, 217, 222)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(20, 20, 20)');
-            document.documentElement.style.setProperty('--FILEBAR', 'rgb(37, 37, 37)');
+            document.documentElement.style.setProperty('--FILEBAR', 'rgb(38, 37, 56)');
+            document.documentElement.style.setProperty('--INSIDECONTENTBOXCOLOR', 'rgb(68, 69, 83)');
+            document.documentElement.style.setProperty('--INSIDEBOXSHADOW', 'rgb(22, 21, 21)');
         } 
         if(colors.get("Vader")) {
             document.documentElement.style.setProperty('--THEME', 'rgb(39, 17, 17)');
@@ -106,10 +113,13 @@ export default function app(){
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(210, 0, 0)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
             document.documentElement.style.setProperty('--FILEBAR', 'rgb(0, 0, 0)');
-
+            document.documentElement.style.setProperty('--INSIDECONTENTBOXCOLOR', 'rgb(13, 13, 13)');
+            document.documentElement.style.setProperty('--INSIDEBOXSHADOW', 'rgb(62, 13, 13)');
         } 
 
     }, [colors]);
+
+
 
     const [themesOpen , setSection] = React.useState(false)   //we are just using one flip switch to toggle sections if further new sections are to be added need to use a different data structure
     function toggleThememenu(string){ // changing the section in filenav 
@@ -148,7 +158,7 @@ export default function app(){
     }
 
     return(
-        <div className="resume-container">
+        <div className={`resume-container ${colors.get("Vader") ? "vader-transition" : ""}`} > {/*  things i do for perfection just to apply a darth vader theme lol */}
             <Header
                 colors = {colors}
             />
