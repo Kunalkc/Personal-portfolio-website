@@ -59,8 +59,8 @@ export default function Filebar(props){
         <div onClick={()=>props.setTheme("Thespacedeck")} className={`theme-item Thespacedeck ${props.colors.get("Thespacedeck") ? "selected-theme" : ""}`}>
         <p>Millennium Falcon</p>
        </div>
-        <div onClick={()=>props.setTheme("Vanilla")} className={`theme-item  Vanilla ${props.colors.get("Vanilla") ? "selected-theme" : ""}`}>
-        <p>Vanilla</p>
+        <div onClick={()=>props.setTheme("Vader")} className={`theme-item  Vader ${props.colors.get("Vader") ? "selected-theme" : ""}`}>
+        <p>Vader</p>
        </div>
 
        </div> 

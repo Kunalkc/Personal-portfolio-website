@@ -19,6 +19,7 @@
     --BORDERCOLOR: rgb(130, 130, 130);
     --FONTCOLOR: rgb(210, 217, 222);
     --TABBARCOLOR:rgb(20, 20, 20);
+    --FILEBAR: rgb(37, 37, 37);
 
     --INSIDESHADOW: rgba(20, 19, 19, 0.66);
 }
@@ -64,6 +65,10 @@ body{
     grid-column: 1/4;
     background-color: var(--HEADERCOLOR);
     border-bottom: 0.1px solid var(--BORDERCOLOR);
+   /*  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
 }
 .dev-header{
     position: absolute;
@@ -84,8 +89,27 @@ body{
     flex-direction: row;
     justify-content: center;
     font-size: large;
+    z-index: 1;
 }
 
+.cover{
+    z-index: 2;
+    position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  animation: reveal 7s forwards;
+}
+@keyframes reveal {
+    from {
+      height: 100%;
+    }
+    to {
+      height: 0%;
+    }
+  }
 /* SIDE BAR */
 .side-bar{
     grid-row: 2/5;
@@ -176,7 +200,7 @@ body{
 }
 
 .filebar-title{
-    background-color: #252525;
+    background-color: var(--FILEBAR);
     border-bottom: 0.5px solid var(--BORDERCOLOR);
     align-self: flex-start;
     display: block;
@@ -249,8 +273,8 @@ body{
     background-color: rgb(45, 40, 97);
     opacity: 0.8;
 }
-.Vanilla{
-    background-color: rgb(123, 93, 115);
+.Vader{
+    background-color: rgb(43, 18, 18);
     opacity: 0.8;
     /* color:#000000 !important; */
 }

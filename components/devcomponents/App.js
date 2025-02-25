@@ -19,7 +19,7 @@ export default function app(){
         ["Bloodymary", false],
         ["Thematrix", false],
         ["Thespacedeck", false],
-        ["Vanilla", false],
+        ["Vader", false],
       ]);
 
       
@@ -54,6 +54,8 @@ export default function app(){
             document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(30, 30, 30)');
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(210, 217, 222)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(20, 20, 20)');
+            document.documentElement.style.setProperty('--FILEBAR', 'rgb(37, 37, 37)');
+            
 
         } 
         if(colors.get("Bloodymary")) {
@@ -66,21 +68,23 @@ export default function app(){
             document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(9, 6, 22)');
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(214, 191, 191)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
+            document.documentElement.style.setProperty('--FILEBAR', 'rgb(37, 37, 37)');
 
         } 
         if(colors.get("Thematrix")) {
 
             document.documentElement.style.setProperty('--THEME', 'rgb(89, 170, 75)');
             document.documentElement.style.setProperty('--BORDERCOLOR', 'rgb(30, 138, 11)');
-            document.documentElement.style.setProperty('--CODEAREACOLOR', 'rgb(0, 6, 0)');
-            document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(21, 22, 29)');
+            document.documentElement.style.setProperty('--CODEAREACOLOR', 'rgb(0, 28, 0)');
+            document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(0, 0, 0)');
             document.documentElement.style.setProperty('--HEADERCOLOR', 'rgb(0, 0, 0)');
             document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(0, 0, 0)');
-            document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(209, 255, 200)');
+            document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(123, 255, 97)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
+            document.documentElement.style.setProperty('--FILEBAR', 'rgb(0, 0, 0)');
 
         } 
-        if(colors.get("Thespacedeck")) {
+        if(colors.get("Thespacedeck")) { //Spacedeck is millenuim falcon
 
             document.documentElement.style.setProperty('--THEME', 'rgb(45, 40, 97)');
             document.documentElement.style.setProperty('--BORDERCOLOR', 'rgb(130, 130, 130)');
@@ -90,16 +94,18 @@ export default function app(){
             document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(30, 30, 30)');
             document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(210, 217, 222)');
             document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(20, 20, 20)');
+            document.documentElement.style.setProperty('--FILEBAR', 'rgb(37, 37, 37)');
         } 
-        if(colors.get("Vanilla")) {
-            document.documentElement.style.setProperty('--THEME', 'rgb(252, 158, 235)');
-            document.documentElement.style.setProperty('--BORDERCOLOR', 'rgb(36, 36, 36)');
-            document.documentElement.style.setProperty('--CODEAREACOLOR', 'rgb(242, 209, 252)');
-            document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(154, 131, 172)');
-            document.documentElement.style.setProperty('--HEADERCOLOR', 'rgb(173, 121, 169)');
-            document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(188, 188, 188)');
-            document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(0, 0, 0)');
-            document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(86, 70, 86)');
+        if(colors.get("Vader")) {
+            document.documentElement.style.setProperty('--THEME', 'rgb(39, 17, 17)');
+            document.documentElement.style.setProperty('--BORDERCOLOR', 'rgb(126, 44, 44)');
+            document.documentElement.style.setProperty('--CODEAREACOLOR', 'rgb(19, 0, 0)');
+            document.documentElement.style.setProperty('--SIDEBARCOLOR', 'rgb(0, 0, 0)');
+            document.documentElement.style.setProperty('--HEADERCOLOR', 'rgb(0, 0, 0)');
+            document.documentElement.style.setProperty('--FILENAVAREACOLOR', 'rgb(0, 0, 0)');
+            document.documentElement.style.setProperty('--FONTCOLOR', 'rgb(210, 0, 0)');
+            document.documentElement.style.setProperty('--TABBARCOLOR', 'rgb(0, 0, 0)');
+            document.documentElement.style.setProperty('--FILEBAR', 'rgb(0, 0, 0)');
 
         } 
 
@@ -143,7 +149,9 @@ export default function app(){
 
     return(
         <div className="resume-container">
-            <Header/>
+            <Header
+                colors = {colors}
+            />
             <Tabs
                 tabState = {tabs}
                 removetab = {removefromTab}
