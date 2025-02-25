@@ -15,6 +15,13 @@
     transition: border-color 1s linear, background-color 3s linear, box-shadow 1s linear, color 0.3s linear;;
 }
 
+.vader-image{
+    background-color: brown;
+    position: absolute;
+    top:1vh;
+    left: 38vw;
+    border-radius: 4px;
+}
 /* .all-tabs-closed{
     position: absolute;
     top:50%;

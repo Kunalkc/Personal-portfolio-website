@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function header(props){
-  let matrix = "POASFJAPFJAPOJAEPOMVPAFOSHEGOIWUQYTIZKZNVUWRYQOEQIHTNCONBCZCHAGSCGASCDGQWWPURORTJLHFJHMNBVMNBCNZBVNZVXCKJFAKJSFAGLADFGLAKETOQWYPQWOITYQTOIQMENHTPQ"
+  let matrix = "POASFJAPFJAPOJAEPOMVPAFOSHEGOIWUQYTIZKZNVUWRYQOEQIHT2193218746319863114631874938716950123124012846031842140121385618!@#$%^&*())(*&^%$#@!NCONBCZCHAGSCGASCDGQWWPURORTJLHFJHMNBVMNBCNZBVNZVXCKJFAKJSFAGLADFGLAKETOQWYPQWOITYQTOIQMENHTPQ"
   matrix = matrix.split("")
 
 
@@ -77,6 +77,7 @@ export default function header(props){
 
     {props.colors.get("Thematrix") && <div style={matrixStyle}><p> {RandomCounter}  </p></div>}
 
+    {props.colors.get("Vader") && <img className="vader-image" src="components/devcomponents/devimg/vader.png" width={20} height={17}></img>}
     {props.colors.get("Vader") && <div style={vaderStyle}><p> <strong>{Vader}</strong>  </p></div>}
     {props.colors.get("Vader") && <div className="cover"></div>}
 
