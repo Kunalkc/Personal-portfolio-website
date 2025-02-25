@@ -14,6 +14,13 @@
 .vader-transition * {
     transition: border-color 1s linear, background-color 3s linear, box-shadow 1s linear, color 0.3s linear;;
 }
+
+/* .all-tabs-closed{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+ */
 :root{
     
 

@@ -146,12 +146,42 @@ export default function app(){
           });
     }
 
+    function whenselectedtabclosed(tabStatus,name){
+       
+        const tempState = new Map(tabStatus);
+        let selectedSet = false;
+    
+        tempState.forEach((value, mapKey) => {
+            if (mapKey !== name) { // Exclude the 'name' key
+                if (value.onTab && !selectedSet) { 
+                    tempState.set(mapKey, { ...value, selected: true });
+                    selectedSet = true; // Ensure only one is set to true
+                } else {
+                    tempState.set(mapKey, { ...value, selected: false });
+                }
+            }
+        });
+    
+        return tempState;
+    }
+    
+
     function removefromTab(name,event){
         event.stopPropagation();
         console.log("removed")
 
           setTabstate((prevState) => {
-            const newTabState = new Map(prevState); // Make a copy
+
+            let newTabState// Make a copy
+
+            //BUG FIX FOR WHEN WE CLOSE THE SELECTED TAB WE THEN HAVE TO SELECT SOME OTHER TAB
+            if(prevState.get(name).selected){
+                 newTabState = whenselectedtabclosed(prevState,name)
+            }else{
+                 newTabState = new Map(prevState);
+            }
+           
+             
             newTabState.set(name, { ...newTabState.get(name), selected: false, onTab: false });
             return newTabState;
           });

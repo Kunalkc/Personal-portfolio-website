@@ -25,6 +25,14 @@ export default function codearea(props){
       <Education/>
       <Contact/> </>
       }
+      
+       {!(props.tabState.get("About").onTab ||
+        props.tabState.get("Skills").onTab ||
+         props.tabState.get("Experience").onTab ||
+          props.tabState.get("Projects").onTab ||
+           props.tabState.get("Education").onTab ||
+            props.tabState.get("Contact").onTab ||
+             props.tabState.get("Full Resume").onTab) && <p className="all-tabs-closed">click on a file to open it</p>}
     </div>
   )
 }
