@@ -173,11 +173,50 @@ body{
     border-top: 0.1px solid var(--BORDERCOLOR);
  /*    border-right: 0.1px solid var(--BORDERCOLOR); */
 }
-.codearea{
+
+.maincontent-wrapper{
+    
     grid-row: 3/4;
     grid-column: 3/4;
+    display: grid;
+    position: relative; /* So as to place the minimap pointer */
+    grid-template-columns: 90fr 10fr;
+}
+.minimap{
+    grid-column: 2/3;
+    opacity: 0.8;
+    overflow-y: auto;
+
+    background-color: 	var(--CODEAREACOLOR);
+    box-shadow: -4px 0px 3px 3px var(--INSIDEBOXSHADOW);
+
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.minimap-location{
+    position: absolute;
+    right:0;
+    top: 20%;
+    height: 100px;
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0.779);
+}
+.minimap::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+.codearea::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+.codearea{
+    grid-column: 1/2;
     background-color: 	var(--CODEAREACOLOR);
     overflow-x: auto;
+
+    scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 .basicbox{
@@ -195,6 +234,24 @@ body{
     display: flex;
     flex-direction: column;
     gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+.minimap .basicbox{
+    background-color: var(--INSIDECONTENTBOXCOLOR);
+    box-shadow: 1px 1px 1px 1px var(--INSIDEBOXSHADOW);
+    font-size: 1%;
+    min-height: 10%;
+    min-width: 80%;
+  /*   width:auto;
+    height: auto; */
+
+    margin: 2em;
+    border-radius: 0.7%;
+
+    display: flex;
+    flex-direction: column;
+    gap:2em;
     justify-content: center;
     align-items: center;
 }

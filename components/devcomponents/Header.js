@@ -69,7 +69,7 @@ export default function header(props){
     left: '40vw'
   }
 
-  const Vader = "REBEL  FORCES  HAVE  BEEN  DEFEATED"
+  const Vader = "REBEL  FORCES  HAVE  BEEN  CRUSHED"
 
   return(
     <div  style={props.colors.get("Thematrix") ? containerStyle : {}} className= "head-bar" >
