@@ -13,43 +13,59 @@ export default function codearea(props){
   
   /* const wiggleforminimap = mainRef.current.scrollHeight - mainRef.current.clientHeight  */
 
-  const wiggleForMinimap = mainRef.current && (mainRef.current.scrollHeight > mainRef.current.clientHeight) 
+ /*  const wiggleForMinimap = mainRef.current && (mainRef.current.scrollHeight > mainRef.current.clientHeight) 
     ? mainRef.current.scrollHeight - mainRef.current.clientHeight 
-    : 0;
+    : 0; */
 
   const [scrollTop,setScrollTop] = React.useState(10)    // the amount that has been scrolled
   const [scrollHeight,setScrollHeight] = React.useState(0)   // total height of scrollable area
   const [visibleHeight, setVisibleHeight] = React.useState(0);
 
-  console.log(wiggleForMinimap)
-
-  React.useEffect(()=>{
-
-    //sets the position of scroll bar from the top on the minimap
-    const handleScroll = () => {
-      setScrollTop(mainRef.current.scrollTop);
-      minimapRef.current.scrollTop = wiggleForMinimap * scrollRatio;    //  DIFFERENCE OF VISIBLE AREA AND TOTAL SCROLL HEIGHT OF MINIMAP = WIGGLE ROOM FOR SCROLL x SCROLL RATIO
+  const [minimapOverflowscroll,setminimapscroll] = React.useState(0)
+  
+  React.useEffect(() => {
+    const updateScroll = () => {
+      if (mainRef.current && minimapRef.current) {
+        // Calculate the scroll ratio based on the main content area
+        const totalScrollHeight = mainRef.current.scrollHeight;
+        const visibleArea = mainRef.current.clientHeight;
+        setScrollHeight(totalScrollHeight);
+        setVisibleHeight(visibleArea);
+        const scrollRatio = visibleArea / totalScrollHeight;
+  
+        // Calculate wiggle room for minimap using minimapRef
+        const wiggleForMinimap = minimapRef.current.scrollHeight - minimapRef.current.clientHeight;
+  
+        // Determine the amount of scroll for minimap
+        const minimapScroll = mainRef.current.scrollTop * (wiggleForMinimap / (totalScrollHeight - visibleArea));
+        
+        setScrollTop(mainRef.current.scrollTop);
+        setminimapscroll(minimapScroll);
+      }
     };
-    
-    //gets us the total length of content and the content on screen
-    const updateDimensions = () => {
-      setScrollHeight(mainRef.current.scrollHeight); // Total height of scrollable content
-      setVisibleHeight(mainRef.current.clientHeight); // Height of visible area
-    };
-
-    updateDimensions();
-
-    window.addEventListener('resize', updateDimensions);
-    mainRef.current.addEventListener('scroll', handleScroll);  //Handles the scroll and moves scroll bar
-    
-    // REMOVE EvenT listeners when we exit 
+  
+    // Initial update
+    updateScroll();
+  
+    // Attach event listeners
+    mainRef.current.addEventListener('scroll', updateScroll);
+    window.addEventListener('resize', updateScroll);
+  
+    // Cleanup
     return () => {
-      window.removeEventListener('resize', updateDimensions);
-      mainRef.current.removeEventListener('scroll', handleScroll);
+      mainRef.current.removeEventListener('scroll', updateScroll);
+      window.removeEventListener('resize', updateScroll);
     };
-  },[])
-
-
+  }, []);
+  
+  // This effect updates the minimap scroll position
+  React.useEffect(() => {
+    if (minimapRef.current) {
+      minimapRef.current.scrollTop = minimapOverflowscroll;
+    }
+  }, [minimapOverflowscroll]);
+  
+  
   const scrollRatio = visibleHeight / scrollHeight; // Ratio of visible area to total content of codearea
   const scrollbarHeight = scrollRatio * 100;         // height of the moving cursor
   const scrollbarTop = (scrollTop / scrollHeight) * 100;        // position of moving cursor thing calculated as how much content has been scrolled divided by total scrollabke height
@@ -111,7 +127,7 @@ export default function codearea(props){
           props.tabState.get("Projects").onTab ||
            props.tabState.get("Education").onTab ||
             props.tabState.get("Contact").onTab ||
-             props.tabState.get("Full Resume").onTab) && <p className="all-tabs-closed">click on a file to open it</p>}
+             props.tabState.get("Full Resume").onTab) && <p className="all-tabs-closed">click on a file to open it</p>}   {/* BUG FIX FOR THE CASE WHEN NO FILE IS OPEN */}
 
     </div>
 
