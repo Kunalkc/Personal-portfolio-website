@@ -11,17 +11,13 @@ export default function codearea(props){
   const mainRef = React.useRef();  // attached to scrollable code area to watch it
   const minimapRef = React.useRef();  //attached to minimap
   
-  /* const wiggleforminimap = mainRef.current.scrollHeight - mainRef.current.clientHeight  */
-
- /*  const wiggleForMinimap = mainRef.current && (mainRef.current.scrollHeight > mainRef.current.clientHeight) 
-    ? mainRef.current.scrollHeight - mainRef.current.clientHeight 
-    : 0; */
 
   const [scrollTop,setScrollTop] = React.useState(10)    // the amount that has been scrolled
   const [scrollHeight,setScrollHeight] = React.useState(0)   // total height of scrollable area
   const [visibleHeight, setVisibleHeight] = React.useState(0);
-
   const [minimapOverflowscroll,setminimapscroll] = React.useState(0)
+
+  const [isDragging, setIsDragging] = React.useState(false);
   
   React.useEffect(() => {
     const updateScroll = () => {
@@ -66,6 +62,16 @@ export default function codearea(props){
   }, [minimapOverflowscroll]);
   
   
+  const handleMinimapClick = (event) => {
+    if (mainRef.current && minimapRef.current) {
+      const minimapRect = minimapRef.current.getBoundingClientRect();
+      const clickY = event.clientY - minimapRect.top;
+      const clickRatio = clickY / minimapRef.current.clientHeight;
+      const newScrollTop = clickRatio * (scrollHeight - visibleHeight);
+      mainRef.current.scrollTop = newScrollTop;
+    }
+  };
+
   const scrollRatio = visibleHeight / scrollHeight; // Ratio of visible area to total content of codearea
   const scrollbarHeight = scrollRatio * 100;         // height of the moving cursor
   const scrollbarTop = (scrollTop / scrollHeight) * 100;        // position of moving cursor thing calculated as how much content has been scrolled divided by total scrollabke height
@@ -106,7 +112,7 @@ export default function codearea(props){
        backgroundColor: 'rgba(255, 255, 255, 0.779)'
     }}></div> {/* the moving cursor */}
 
-    <div ref={minimapRef} className="minimap">
+    <div ref={minimapRef} className="minimap" onClick={handleMinimapClick}>
     {props.tabState.get("About").selected && <About/>}
       {props.tabState.get("Skills").selected && <Skills/>}
       {props.tabState.get("Experience").selected && <Experience/>}
