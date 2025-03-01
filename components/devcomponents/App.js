@@ -25,7 +25,7 @@ export default function app(){
       
 
     const [colors, setColor] = React.useState(colorMap)
-    console.log(colors)
+
     function changeTheme(string){
 
         setColor(prevState=>{
@@ -45,7 +45,7 @@ export default function app(){
 
     React.useEffect(() => {
 
-        console.log("i ran bitch")
+
         if(colors.get("Aqua")) {
 
             document.documentElement.style.setProperty('--THEME', 'rgb(100, 167, 168)');
@@ -129,6 +129,7 @@ export default function app(){
 
     }
 
+//Selects a file and puts it on tabbar
     function selector(name){
 
         console.log("selected")
@@ -146,6 +147,7 @@ export default function app(){
           });
     }
 
+// used in below function for bug fix
     function whenselectedtabclosed(tabStatus,name){
        
         const tempState = new Map(tabStatus);
@@ -165,10 +167,10 @@ export default function app(){
         return tempState;
     }
     
-
+// remove a file from tab
     function removefromTab(name,event){
         event.stopPropagation();
-        console.log("removed")
+    
 
           setTabstate((prevState) => {
 
@@ -186,6 +188,69 @@ export default function app(){
             return newTabState;
           });
     }
+
+ // state to store the text in console
+  const [consoleText , changeConsoletext] = React.useState("")
+  
+  function handletextarea(event){
+    const {name,value} = event.target
+    console.log(value)
+    changeConsoletext(value)
+  }
+
+function handleKeyDown(event){
+
+        if (event.key === "Enter") {
+            console.log("enter pressed")
+            event.preventDefault();
+
+            switch (consoleText){
+                case "cd Full_Resume":{
+                    console.log("full resume selected")
+                    changeConsoletext("")
+                    selector("Full Resume")
+                    break
+                }
+                case "cd Education":{
+                    console.log("Education selected")
+                    changeConsoletext("")
+                    selector("Education")
+                    break
+                }
+                case "cd Experience":{
+                    console.log("Experience selected")
+                    changeConsoletext("")
+                    selector("Experience")
+                    break
+                }
+                case "cd Skills":{
+                    console.log("Skills selected")
+                    changeConsoletext("")
+                    selector("Skills")
+                    break
+                }
+                case "cd Projects":{
+                    console.log("Projects selected")
+                    changeConsoletext("")
+                    selector("Projects")
+                    break
+                }
+                case "cd About":{
+                    console.log("About selected")
+                    changeConsoletext("")
+                    selector("About")
+                    break
+                }
+                case "cd Contact":{
+                    console.log("Contact selected")
+                    changeConsoletext("")
+                    selector("Contact")
+                    break
+                }
+            } 
+    
+        }
+}
 
     return(
         <div className={`resume-container ${colors.get("Vader") ? "vader-transition" : ""}`} > {/*  things i do for perfection just to apply a darth vader theme lol */}
@@ -215,7 +280,11 @@ export default function app(){
                 tabState = {tabs}
                
             />
-            <Console/>
+            <Console
+                consoleText = {consoleText}
+                textareachange = {handletextarea}
+                handleKeyDown = {handleKeyDown}
+            />
         </div>
     )
 }
