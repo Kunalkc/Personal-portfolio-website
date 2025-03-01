@@ -248,7 +248,7 @@ function handleKeyDown(event){
                     break
                 }
             } 
-    
+            changeConsoletext("")
         }
 }
 
