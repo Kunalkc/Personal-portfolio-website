@@ -9,7 +9,7 @@ export default function Sidebar(props){
      <div onClick={()=>props.changeSection("Themes")} className={`fileiconimage ${props.colorTab ? "selected-section" : ""}`}><img src="components/devcomponents/devimg/themes.png" width={40} height={40} title="Themes"></img></div>
       </div>
 
-     <div className="fileiconimage"><a href="index.html"><img src="components/devcomponents/devimg/shutdown.png" width={40} height={40} title="Home"></img></a></div>
+     <div className="fileiconimage"><a href="index.html"><img className = "icon1" src="components/devcomponents/devimg/shutdown.png" width={40} height={40} title="Home"></img></a></div>
     </div>
   )
 }

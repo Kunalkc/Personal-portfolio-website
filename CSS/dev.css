@@ -485,6 +485,12 @@ body{
 a.icon:hover{
     animation: 0.2s ease-in-out 0s normal forwards grow ;
 }
+.icon1{
+    opacity: 0.6;
+}
+.icon1:hover{
+    opacity: 1;
+}
 @keyframes grow{
     0%{
         scale: 100%;
