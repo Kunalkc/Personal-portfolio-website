@@ -13,7 +13,7 @@ export default function Filebar(props){
   return(
     <div className="file-bar">
 
-      { !props.colorTab&& <> <h2 className="filebar-title">Files</h2>
+      { !props.colorTab && <> <h2 className="filebar-title">Files</h2>
      
       <div onClick={()=>props.select("Full Resume")} className={`filebar-item ${props.tabState.get("Full Resume").selected ? "selected-file" : ""}`}>
         <p>Full Resume</p>

@@ -510,3 +510,274 @@ a.icon:hover{
         box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.251);
     }
 }
+
+
+
+/* MEDIA QUERIES FOR MOBILE SCREENS */
+
+@media screen and (max-width: 768px){
+    .resume-container{
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        margin:0;
+        display: grid;
+        grid-template-rows: 5vh 15vh 5vh 70vh 5vh;
+        grid-template-columns: 100vw;
+    }
+
+    /* SIDE BAR IS NOW BOTTOM BAR */
+    .side-bar{
+        grid-row: 5/6;
+        grid-column: 1/2;
+        background-color: var(--SIDEBARCOLOR);
+    
+        width:100%;
+        height:100%;
+
+        padding-top:2rem;
+        padding-bottom:2rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:  space-between
+    }
+    .side-bar-top{
+        display: flex;
+        flex-direction: row;
+    }
+    .selected-section{
+        /* background-color: rgba(240, 248, 255, 0.271); */
+        border-bottom: 6px solid var(--THEME);
+        opacity: 1;
+        border-left:none;
+    }
+
+ /* HEADER */
+    .head-bar{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background-color: var(--HEADERCOLOR);
+        border-bottom: 0.1px solid var(--BORDERCOLOR);
+       /*  display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; */
+    }
+    .dev-header{
+        position: absolute;
+        top:1vh;
+        padding-top:2px;
+        background-color: black;
+        border-radius: 4vh;
+        width: 40vw;
+        height:3vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .text-positioning{
+        top: 4vh !important; 
+        left: 2vw !important;
+    }
+
+/* TABBAR */
+
+    .tabs{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background-color: var(--TABBARCOLOR);
+        
+        overflow-X: auto ;
+        scrollbar-width: none; /* For Firefox */
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+        display: flex;
+        flex-direction: row;
+    }
+    .tab-item{
+        min-width: 30vw;
+    }
+    .close-icon{
+        /*   position: absolute;
+          right: 2px;
+          top:2px; */
+          opacity: 1;
+          margin-right: 0;
+          background-color: rgba(240, 248, 255, 0.322);
+          /* width: 5px;
+          height: 5px; */
+      }
+  
+
+/* CODEAREA CODE */
+    .maincontent-wrapper{
+    
+        grid-row: 4/5;
+        grid-column: 1/2;
+        display: grid;
+        position: relative; /* So as to place the minimap pointer */
+        grid-template-columns: 100vw;
+    }
+    .codearea{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background-color: 	var(--CODEAREACOLOR);
+        overflow-x: auto;
+    
+        scrollbar-width: none; /* For Firefox */
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+     /*  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+    }
+    .console{
+        display: none;
+    }
+    .minimap{
+        display: none;
+    }
+    .minimap-location{
+        display: none;
+    }
+/* CONTENT INSIDE CODEAREA */
+    .basicbox{
+        background-color: var(--INSIDECONTENTBOXCOLOR);
+        box-shadow: 4px 4px 5px 5px var(--INSIDEBOXSHADOW);
+        min-height: 200px;
+        min-width: 95vw;
+        max-width: 60%;
+        width:auto;
+        height: auto;
+    
+        margin:0;
+        margin-top: 1vh;
+        margin-left: 1vh;
+        border-radius: 0.7vh;
+    
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+  /* FILENAV TAB */
+  .file-bar{
+ 
+    grid-row: 2/3;
+    grid-column: 1/2;
+    
+    background-color: var(--FILENAVAREACOLOR);
+    border-top: 0.1px solid var(--BORDERCOLOR);
+    border-left: 0.1px solid var(--BORDERCOLOR);
+    border-right: 0.1px solid var(--BORDERCOLOR);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 5vh;
+
+    overflow-y: auto;
+   }
+
+  .filebar-title{
+    position: absolute;
+    top:5vh;
+    left:0;
+    background-color: var(--FILEBAR);
+    border-bottom: 0.5px solid var(--BORDERCOLOR);
+    align-self: flex-start;
+    display: block;
+    width: 100%;
+
+   
+    /* transition: border-color 3s linear; */
+   }
+
+  .filebar-item{
+     width:100%;
+     text-align: center;
+     height: 40%;
+     border-radius: 1px;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+
+  .filebar-item:hover{
+     background-color: rgba(240, 248, 255, 0.078);
+   }
+
+   .selected-file{
+     background-color: rgba(240, 248, 255, 0.186);
+     border-left: 4px solid var(--THEME);
+    }
+   .selected-file:hover{
+     background-color: rgba(240, 248, 255, 0.186);
+     border-left: 4px solid var(--THEME);
+    }
+
+  .themesection{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    overflow-y: auto;
+    /* color:#000000 !important */
+    }
+
+  .theme-item{
+    width:60%;
+    height: 30%;
+
+    padding: 1rem;
+    background-color: rgb(255, 0, 0);
+    
+    box-shadow: 1px 4px 4px 4px var(--INSIDEBOXSHADOW);
+    
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aqua{
+    background-color: rgb(100, 167, 168);
+    opacity: 0.8;
+}
+.Bloodymary{
+    background-color: rgb(168, 110, 100);
+    opacity: 0.8;
+}
+.Thematrix{
+    background-color: rgb(89, 170, 75);
+    opacity: 0.8;
+}
+.Thespacedeck{
+    background-color: rgb(45, 40, 97);
+    opacity: 0.8;
+}
+.Vader{
+    background-color: rgb(43, 18, 18);
+    opacity: 0.8;
+    /* color:#000000 !important; */
+}
+.selected-theme{
+    opacity: 1;
+}
+}

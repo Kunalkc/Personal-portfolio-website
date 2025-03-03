@@ -63,6 +63,7 @@ export default function header(props){
     top:'1vh',
     left: '31vw'
   }
+  
   const vaderStyle ={
     position: 'absolute',
     top:'1vh',
@@ -75,10 +76,10 @@ export default function header(props){
     <div  style={props.colors.get("Thematrix") ? containerStyle : {}} className= "head-bar" >
      <div className="dev-header"><p>Dev Portfolio</p> </div>
 
-    {props.colors.get("Thematrix") && <div style={matrixStyle}><p> {RandomCounter}  </p></div>}
+    {props.colors.get("Thematrix") && <div  style={matrixStyle} className ="text-positioning"><p> {RandomCounter}  </p></div>}
 
-    {props.colors.get("Vader") && <img className="vader-image" src="components/devcomponents/devimg/vader.png" width={20} height={17}></img>}
-    {props.colors.get("Vader") && <div style={vaderStyle}><p> <strong>{Vader}</strong>  </p></div>}
+    {props.colors.get("Vader") && window.innerWidth >= 768 && <img className="vader-image" src="components/devcomponents/devimg/vader.png" width={20} height={17}></img>}
+    {props.colors.get("Vader") && window.innerWidth >= 768 && <div className ="text-positioning" style={vaderStyle}><p> <strong>{Vader}</strong>  </p></div>}
     {props.colors.get("Vader") && <div className="cover"></div>}
 
      <div className="Name-header"><p>KUNAL CHANDEL</p> </div>
