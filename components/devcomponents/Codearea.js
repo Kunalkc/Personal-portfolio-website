@@ -77,6 +77,16 @@ export default function codearea(props){
   const scrollbarTop = (scrollTop / scrollHeight) * 100;        // position of moving cursor thing calculated as how much content has been scrolled divided by total scrollabke height
 
   //array of objects is being passes
+
+
+  const [showScrollbar, setShowScrollbar] = React.useState(false); //  FOR THE SAKE OF RESPONSIVENESS
+  React.useEffect(() => {
+    console.log("checking width")
+    if (window.innerWidth >= 768) { 
+      setShowScrollbar(true);
+    }
+  }, []); //  Runs only once on mount
+
   return(
     <div className="maincontent-wrapper">
     <div ref={mainRef}  /* Attach ref to access DOM element */ className="codearea">
@@ -103,14 +113,14 @@ export default function codearea(props){
              props.tabState.get("Full Resume").onTab) && <p className="all-tabs-closed">click on a file to open it</p>}
     </div>
 
-    <div style ={{
+    { showScrollbar && (<div style ={{
        position: 'absolute',
        right:'0',
        top: `${scrollbarTop}%`,
        height: `${scrollbarHeight}%`,
        width: '10%',
-       backgroundColor: 'rgba(255, 255, 255, 0.779)'
-    }}></div> {/* the moving cursor */}
+       backgroundColor: 'rgba(255, 255, 255, 0.779)',
+    }}></div>)} {/* the moving cursor */}
 
     <div ref={minimapRef} className="minimap" onClick={handleMinimapClick}>
     {props.tabState.get("About").selected && <About/>}
