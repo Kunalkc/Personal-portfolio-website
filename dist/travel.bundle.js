@@ -10,53 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./components/filmmakingcomponents/App.js":
-/*!************************************************!*\
-  !*** ./components/filmmakingcomponents/App.js ***!
-  \************************************************/
+/***/ "./components/travelcomponents/App.js":
+/*!********************************************!*\
+  !*** ./components/travelcomponents/App.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ \"./components/filmmakingcomponents/Header.js\");\n/* harmony import */ var _Filmtiles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Filmtiles */ \"./components/filmmakingcomponents/Filmtiles.js\");\n\n\n\nfunction App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"main\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Filmtiles__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)));\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/filmmakingcomponents/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ \"./components/travelcomponents/Header.js\");\n/* harmony import */ var _Traveltiles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Traveltiles */ \"./components/travelcomponents/Traveltiles.js\");\n\n\n\nfunction App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"main\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Traveltiles__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)));\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/travelcomponents/App.js?");
 
 /***/ }),
 
-/***/ "./components/filmmakingcomponents/Filmtiles.js":
-/*!******************************************************!*\
-  !*** ./components/filmmakingcomponents/Filmtiles.js ***!
-  \******************************************************/
+/***/ "./components/travelcomponents/Header.js":
+/*!***********************************************!*\
+  !*** ./components/travelcomponents/Header.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Filmtiles)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _content_filmdata__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./content/filmdata */ \"./components/filmmakingcomponents/content/filmdata.js\");\n\n\nfunction Filmtiles() {\n  const tiles = _content_filmdata__WEBPACK_IMPORTED_MODULE_1__[\"default\"].map(item => {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"film-tile\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      className: \"thumbnail-image\",\n      src: item.thumbnail\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"text-container\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: item.url\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      className: \"clickable-thumbnail\",\n      src: \"./img/youtube.png\",\n      width: \"30px\",\n      height: \"30px\"\n    }))));\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"tiles-container\"\n  }, tiles);\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/filmmakingcomponents/Filmtiles.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction header() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"header-tile\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"Travel\"));\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/travelcomponents/Header.js?");
 
 /***/ }),
 
-/***/ "./components/filmmakingcomponents/Header.js":
-/*!***************************************************!*\
-  !*** ./components/filmmakingcomponents/Header.js ***!
-  \***************************************************/
+/***/ "./components/travelcomponents/Traveltiles.js":
+/*!****************************************************!*\
+  !*** ./components/travelcomponents/Traveltiles.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction header() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"header-tile\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"Film-Making\"));\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/filmmakingcomponents/Header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Traveltiles)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _content_Traveldata__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./content/Traveldata */ \"./components/travelcomponents/content/Traveldata.js\");\n\n\nfunction Traveltiles() {\n  const tiles = _content_Traveldata__WEBPACK_IMPORTED_MODULE_1__[\"default\"].map(item => {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"travel-tile\"\n    });\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"tiles-container\"\n  }, tiles);\n}\n\n//# sourceURL=webpack://personal-portfolio-website/./components/travelcomponents/Traveltiles.js?");
 
 /***/ }),
 
-/***/ "./components/filmmakingcomponents/content/filmdata.js":
-/*!*************************************************************!*\
-  !*** ./components/filmmakingcomponents/content/filmdata.js ***!
-  \*************************************************************/
+/***/ "./components/travelcomponents/content/Traveldata.js":
+/*!***********************************************************!*\
+  !*** ./components/travelcomponents/content/Traveldata.js ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{\n  id: 1,\n  title: \"Soulful shades of pondicherry\",\n  url: \"https://www.youtube.com/watch?v=van2kuI2S_w\",\n  thumbnail: \"components/filmmakingcomponents/content/img/Pondicherry1.png\",\n  description: \"Embark on a Visual Journey: Lighthouses, Beaches, and Backwaters Await. Stand in awe as majestic lighthouses punctuate the coastline, guiding vessels through the night's embrace. Feel the gentle sea breeze as it dances across sun-kissed shores, where endless beaches stretch into the horizon, begging wanderers to lose themselves in the rhythm of the waves. Meander through tranquil backwaters, where lush mangroves and serene waters create a sanctuary for diverse ecosystems. Each scene unveils a tale of nature's harmony, serenity and boundless beauty.Tag along on a visual journey through Pondicherry's coastal wonders, where the whispers of the sea invite explorers to discover the true essence of coastal tranquility.\"\n}, {\n  id: 2,\n  title: \"Meadows of Shangarh\",\n  url: \"https://www.youtube.com/watch?v=geqRnVhtVtY\",\n  thumbnail: \"components/filmmakingcomponents/content/img/Shangarh.png\",\n  description: \"Nestled in the embrace of the Himalayan foothills, Shangarh emerges as a serene haven, a hidden gem waiting to be discovered. This picturesque village, situated in the heart of Himachal Pradesh, captivates with its untouched beauty and tranquil ambiance. As the first rays of the sun gently kiss the snow-capped peaks, Shangarh unfolds a mesmerizing panorama of lush meadows, dense pine forests, and traditional stone houses adorned with vibrant prayer flags. The air is crisp with a hint of pine, and the sound of distant mountain streams adds a soothing melody to the pristine surroundings. Shangarh, untouched by the hustle and bustle of modern life, invites you to immerse yourself in the simplicity of nature. Wander through meandering trails, where each step unveils a breathtaking landscape. As you ascend to higher elevations, a majestic view of the Great Himalayan Range unfolds, leaving you awestruck by the grandeur of the mountains. In Shangarh, time seems to slow down, allowing you to connect with the rhythm of nature. Whether you find solace in the whispering winds or marvel at the vibrant hues of a Himalayan sunset, Shangarh offers a haven for those seeking tranquility and a deep connection with the majestic mountains. With its unspoiled beauty and serene charm, Shangarh beckons, promising an unforgettable retreat into the lap of Himalayan serenity.\"\n}]);\n\n//# sourceURL=webpack://personal-portfolio-website/./components/filmmakingcomponents/content/filmdata.js?");
-
-/***/ }),
-
-/***/ "./films.js":
-/*!******************!*\
-  !*** ./films.js ***!
-  \******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _components_filmmakingcomponents_App_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/filmmakingcomponents/App.js */ \"./components/filmmakingcomponents/App.js\");\n\n\n\nconst root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById(\"root\"));\nroot.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_filmmakingcomponents_App_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\n//# sourceURL=webpack://personal-portfolio-website/./films.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{\n  id: 1,\n  title: \"Soulful shades of pondicherry\",\n  url: \"https://www.youtube.com/watch?v=van2kuI2S_w\",\n  thumbnail: \"components/filmmakingcomponents/content/img/Pondicherry1.png\",\n  description: \"Embark on a Visual Journey: Lighthouses, Beaches, and Backwaters Await. Stand in awe as majestic lighthouses punctuate the coastline, guiding vessels through the night's embrace. Feel the gentle sea breeze as it dances across sun-kissed shores, where endless beaches stretch into the horizon, begging wanderers to lose themselves in the rhythm of the waves. Meander through tranquil backwaters, where lush mangroves and serene waters create a sanctuary for diverse ecosystems. Each scene unveils a tale of nature's harmony, serenity and boundless beauty.Tag along on a visual journey through Pondicherry's coastal wonders, where the whispers of the sea invite explorers to discover the true essence of coastal tranquility.\"\n}, {\n  id: 2,\n  title: \"Meadows of Shangarh\",\n  url: \"https://www.youtube.com/watch?v=geqRnVhtVtY\",\n  thumbnail: \"components/filmmakingcomponents/content/img/Shangarh.png\",\n  description: \"Nestled in the embrace of the Himalayan foothills, Shangarh emerges as a serene haven, a hidden gem waiting to be discovered. This picturesque village, situated in the heart of Himachal Pradesh, captivates with its untouched beauty and tranquil ambiance. As the first rays of the sun gently kiss the snow-capped peaks, Shangarh unfolds a mesmerizing panorama of lush meadows, dense pine forests, and traditional stone houses adorned with vibrant prayer flags. The air is crisp with a hint of pine, and the sound of distant mountain streams adds a soothing melody to the pristine surroundings. Shangarh, untouched by the hustle and bustle of modern life, invites you to immerse yourself in the simplicity of nature. Wander through meandering trails, where each step unveils a breathtaking landscape. As you ascend to higher elevations, a majestic view of the Great Himalayan Range unfolds, leaving you awestruck by the grandeur of the mountains. In Shangarh, time seems to slow down, allowing you to connect with the rhythm of nature. Whether you find solace in the whispering winds or marvel at the vibrant hues of a Himalayan sunset, Shangarh offers a haven for those seeking tranquility and a deep connection with the majestic mountains. With its unspoiled beauty and serene charm, Shangarh beckons, promising an unforgettable retreat into the lap of Himalayan serenity.\"\n}]);\n\n//# sourceURL=webpack://personal-portfolio-website/./components/travelcomponents/content/Traveldata.js?");
 
 /***/ }),
 
@@ -137,6 +127,16 @@ eval("/**\r\n * @license React\r\n * scheduler.development.js\r\n *\r\n * Copyri
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("\r\n\r\nif (false) {} else {\r\n  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ \"./node_modules/scheduler/cjs/scheduler.development.js\");\r\n}\r\n\n\n//# sourceURL=webpack://personal-portfolio-website/./node_modules/scheduler/index.js?");
+
+/***/ }),
+
+/***/ "./travel.js":
+/*!*******************!*\
+  !*** ./travel.js ***!
+  \*******************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _components_travelcomponents_App_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/travelcomponents/App.js */ \"./components/travelcomponents/App.js\");\n\n\n\nconst root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById(\"root\"));\nroot.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_travelcomponents_App_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\n//# sourceURL=webpack://personal-portfolio-website/./travel.js?");
 
 /***/ })
 
@@ -224,7 +224,7 @@ eval("\r\n\r\nif (false) {} else {\r\n  module.exports = __webpack_require__(/*!
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./films.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./travel.js");
 /******/ 	
 /******/ })()
 ;

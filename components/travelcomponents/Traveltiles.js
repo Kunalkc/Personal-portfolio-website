@@ -1,16 +1,16 @@
 import React from "react";
-import Filmdata from "./content/filmdata"
+import Traveldata from "./content/Traveldata"
 
-export default function Filmtiles(){
+export default function Traveltiles(){
 
-    const tiles = Filmdata.map((item)=>{
+    const tiles = Traveldata.map((item)=>{
         return(
-            <div className="film-tile">
-                 <img className="thumbnail-image" src={item.thumbnail}></img>
+            <div className="travel-tile">
+                 {/* <img className="thumbnail-image" src={item.thumbnail}></img>
                  <div className="text-container"> 
                  <p>{item.title}</p>
                  <a href={item.url}><img className="clickable-thumbnail" src="./img/youtube.png" width="30px" height="30px"></img></a>
-                 </div>
+                 </div> */}
             </div>
         )
     }
