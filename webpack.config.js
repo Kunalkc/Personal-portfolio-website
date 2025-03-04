@@ -6,6 +6,7 @@ module.exports = {
     dev: './dev.js',
     films: './films.js',
     travel: './travel.js',
+    theatre: './theatre.js',
   },
   
   

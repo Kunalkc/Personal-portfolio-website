@@ -15,7 +15,7 @@ body{
 
     position: fixed;
     top: 1vh;
-    left: 40vw;
+    left: 42vw;
 
     background-color: black;
     width: 250px;
@@ -161,14 +161,14 @@ a.icon:hover{
 
 
 
-/* TRAVEL PAGE */
+/*---------------------------------------------------------TRAVEL PAGE-----------------------------------*/
 
 .tiles-container-travel{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .travel-tile{
@@ -177,6 +177,7 @@ a.icon:hover{
     height: auto;
     border-radius: 3vh;
     padding-bottom: 30px;
+    box-shadow: 4px 4px 4px 4px rgb(33, 32, 32);
 }
 
 .text-container-travel{
@@ -185,11 +186,13 @@ a.icon:hover{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding-left: 10px;
 }
 
 .text-container-travel h1{
     text-align: center;
     margin-bottom: 15px;
+   
 }
 
 
@@ -202,3 +205,87 @@ a.icon:hover{
    object-fit: cover;
 }
 
+
+/* Theatre page */
+.theatre-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.theatre-text{
+    background-color: #181717;
+    width: 90vw;
+    height: auto;
+    color: aliceblue;
+    padding: 2rem;
+    border-radius: 3vh;
+    text-align: center;
+}
+
+.highlight{
+    background-color: aliceblue;
+    color:black;
+    border-radius: 1vh;
+    padding: 3px;
+}
+.navtool{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    background-color: #181717;
+    color:aliceblue;
+    border-radius: 3vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.pic-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-pic{
+    width: 80vw;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 3vh;
+    box-shadow: 4px 4px 4px 4px rgb(33, 32, 32);
+}
+
+.single-project{
+    background-color: #181717;
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vh;
+    box-shadow: 4px 4px 4px 4px rgb(33, 32, 32);
+    color: aliceblue;
+}
+
+.single-project img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+.text-wrapper-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.proj-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
