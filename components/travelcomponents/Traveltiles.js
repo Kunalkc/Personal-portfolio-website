@@ -6,18 +6,18 @@ export default function Traveltiles(){
     const tiles = Traveldata.map((item)=>{
         return(
             <div className="travel-tile">
-                 {/* <img className="thumbnail-image" src={item.thumbnail}></img>
-                 <div className="text-container"> 
-                 <p>{item.title}</p>
-                 <a href={item.url}><img className="clickable-thumbnail" src="./img/youtube.png" width="30px" height="30px"></img></a>
-                 </div> */}
+                 <img className="thumbnail-image-travel" src={item.thumbnail}></img>
+                 <div className="text-container-travel"> 
+                 <h1>{item.title}</h1>
+                 <p>{item.description}</p>
+                 </div>
             </div>
         )
     }
     )
 
     return(
-        <div className="tiles-container">
+        <div className="tiles-container-travel">
             {tiles}
         </div>
     )

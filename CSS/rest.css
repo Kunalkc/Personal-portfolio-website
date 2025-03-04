@@ -157,3 +157,48 @@ a.icon:hover{
         box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.251);
     }
 }
+
+
+
+
+/* TRAVEL PAGE */
+
+.tiles-container-travel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.travel-tile{
+    background-color: #1d1b1b;
+    width: 90vw;
+    height: auto;
+    border-radius: 3vh;
+    padding-bottom: 30px;
+}
+
+.text-container-travel{
+    color:aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.text-container-travel h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+.thumbnail-image-travel{
+    width: 90vw;
+    height: 60vh;
+    border-radius: 3vh;
+    margin-bottom: 20px;
+   object-fit: cover;
+}
+
