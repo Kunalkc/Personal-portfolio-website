@@ -2,7 +2,9 @@ body{
     background-color: rgb(27, 27, 27);
 }
 
-
+*{
+    overflow-x: hidden;
+}
 .header-tile{
     position: fixed;
     top:0;
@@ -10,6 +12,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 10;
 
 }
 
@@ -93,6 +96,7 @@ body{
 
 .main-container{
     padding-top: 70px;
+   /*  overflow-x: hidden; */
 }
 
 /* styles for album tiles page */
@@ -103,13 +107,19 @@ body{
 }
 
 .album-tile{
+    margin-top: 20px;
     width: 100%;
     height: auto;
-    background-color: rgba(240, 248, 255, 0.159);
+    background-color: rgba(240, 248, 255, 0.06);
     border-radius: 1vh;
     opacity: 0;
     transition: box-shadow 0.1s ease-in-out;
-    animation: appearFromBelow 0.3s ease-out forwards;
+    animation: appearFromBelow 1s ease-out forwards;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .album-tile:hover{
@@ -120,6 +130,23 @@ body{
 .album-tile:nth-child(1) { animation-delay: 0s; }
 .album-tile:nth-child(2) { animation-delay: 0.05s; }
 .album-tile:nth-child(3) { animation-delay: 0.1s; }
+
+.album-cover{
+    width:40%;
+    height: 90%;
+    border-radius: 1vh;
+    object-fit: cover;
+}
+
+.text-container-album-tile{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue
+}
+
 @keyframes appearFromBelow {
     0% {
         opacity: 0;
@@ -145,4 +172,33 @@ body{
 
     background-color: rgba(240, 248, 255, 0.448);
 
+}
+
+/* after clicked on album */
+.album-phototray{
+
+    position: absolute;
+    top: 30vh;
+
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    justify-content: center;
+    align-self: center;
+    animation: appearFromBelow 1s ease-out forwards;
+}
+
+.image-container{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+
+    
+
+}
+
+.selected-image{
+    width:100vw;
+    height:80vh
 }

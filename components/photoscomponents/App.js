@@ -7,7 +7,6 @@ export default function App(){
     const [albums , setalbums] = React.useState(false)
     const [albumselected, selectalbum] = React.useState(0)
 
-    console.log(albums)
 
     function togglealbum(){
         setalbums((prevstate)=>(!prevstate))
@@ -19,9 +18,10 @@ export default function App(){
     }
 
 
+
     return(
         <div>
-       { albums && <img  onClick= {handlebackclick} className="back-button" src="components\photoscomponents\content\img\backbutton.png" width={50} height={30}></img>}
+       { albums  && <img  onClick= {handlebackclick} className="back-button" src="components\photoscomponents\content\img\backbutton.png" width={50} height={30}></img>}
         <Header/>
         <Photos
             albums = {albums}
