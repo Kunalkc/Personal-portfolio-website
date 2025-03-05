@@ -14,13 +14,14 @@ export default function App(){
     }
 
     function handlebackclick(){
-        console.log("button clicked")
+        if(albumselected){ selectalbum(0) }
+        if(albums && !albumselected) {setalbums(false)}
     }
 
 
     return(
         <div>
-        <img  onClick= {handlebackclick} className="back-button" src="components\photoscomponents\content\img\backbutton.png" width={50} height={30}></img>
+       { albums && <img  onClick= {handlebackclick} className="back-button" src="components\photoscomponents\content\img\backbutton.png" width={50} height={30}></img>}
         <Header/>
         <Photos
             albums = {albums}

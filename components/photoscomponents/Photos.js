@@ -1,5 +1,4 @@
 import React from "react";
-import Photosdata from "./content/photosdata";
 import photosdata from "./content/photosdata";
 export default function Photos(props){
 
@@ -19,6 +18,10 @@ export default function Photos(props){
                  <div className="album-tiles-page">
                 {albums}
                 </div>
+            }
+            { props.albumselected ?  
+              <p>hasdoao</p> : <></>
+
             }
         </div>
     )
