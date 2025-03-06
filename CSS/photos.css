@@ -2,6 +2,13 @@ body{
     background-color: rgb(27, 27, 27);
 }
 
+html, body {
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -257,7 +264,9 @@ body{
     font-size: large;
     color: aliceblue;
     text-align: center;
-    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    animation: appear1 0.4s ease-in-out;
+    
 }
 
 @keyframes appear {
@@ -272,5 +281,19 @@ body{
         transform: translateY(0);
         transform: scaleX(1);
         transform: scaleY(1);
+    }
+}
+@keyframes appear1 {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+
+     /*    transform: scaleY(1); */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+     /* 
+        transform: scaleY(1); */
     }
 }

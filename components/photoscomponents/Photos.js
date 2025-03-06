@@ -62,20 +62,22 @@ export default function Photos(props){
           }
         }}
         >
-            {props.selectedimage && selectimage}
+            {props.selectedimage ? selectimage : null} {/* to display full page image */}
             {
-                props.selectedimage && props.description && <p className="image-description">{selecttext}</p> 
+                (props.selectedimage && props.description) ? <p className="image-description">{selecttext}</p> : null /* display image decription */
             }
-            {!props.albums && <a onClick={props.togglealbum} className="album-link">View Albums</a>}
-            {(props.albums&& !props.albumselected) &&
+            {!props.albums ? <a onClick={props.togglealbum} className="album-link">View Albums</a> : null}
+
+            {(props.albums && !props.albumselected) ?
                  <div className="album-tiles-page">
                 {albums}
-                </div>
+                </div> : null
             }
-            { props.albumselected  &&
+            
+            { props.albumselected ? 
               <div className={`album-phototray ${props.selectedimage ? "downtray" : ""}`}>
               {phototray}
-              </div>
+              </div> : null
             }
         </div>
     )

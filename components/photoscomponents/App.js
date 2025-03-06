@@ -29,7 +29,7 @@ export default function App(){
     function handlebackclick(){
         if(selectedimage){
             selectimage(0)
-             exit
+             return
         }
         if(albumselected){ selectalbum(0) }
         if(albums && !albumselected) {setalbums(false)}

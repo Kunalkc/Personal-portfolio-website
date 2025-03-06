@@ -7,7 +7,7 @@ export default[
        photos:[
         {
             ID: 1,
-            url: "components/travelcomponents/content/img/shimla.jfif",
+            url: "img/photos/DSC07229.jpg",
             description: "The soft hum of the city at dawn was a melody only early risers knew. Streetlights flickered as the suns first rays painted the buildings in gold, and the scent of freshly brewed coffee wafted from a nearby café. A few joggers passed by, their rhythmic footsteps blending with the distant honk of a taxi. Somewhere, a newspaper vendor arranged his stack, glancing at headlines that would soon be devoured by busy commuters. It was a fleeting moment of stillness before the day unfolded in its usual chaos."
         },
         {
@@ -42,6 +42,21 @@ export default[
         },
         {
             ID: 8,
+            url: "components/travelcomponents/content/img/kasol.jpg",
+            description: "The soft hum of the city at dawn was a melody only early risers knew. Streetlights flickered as the suns first rays painted the buildings in gold, and the scent of freshly brewed coffee wafted from a nearby café. A few joggers passed by, their rhythmic footsteps blending with the distant honk of a taxi. Somewhere, a newspaper vendor arranged his stack, glancing at headlines that would soon be devoured by busy commuters. It was a fleeting moment of stillness before the day unfolded in its usual chaos."
+        },
+        {
+            ID: 9,
+            url: "components/travelcomponents/content/img/kasol.jpg",
+            description: "The soft hum of the city at dawn was a melody only early risers knew. Streetlights flickered as the suns first rays painted the buildings in gold, and the scent of freshly brewed coffee wafted from a nearby café. A few joggers passed by, their rhythmic footsteps blending with the distant honk of a taxi. Somewhere, a newspaper vendor arranged his stack, glancing at headlines that would soon be devoured by busy commuters. It was a fleeting moment of stillness before the day unfolded in its usual chaos."
+        },
+        {
+            ID: 10,
+            url: "components/travelcomponents/content/img/kasol.jpg",
+            description: "The soft hum of the city at dawn was a melody only early risers knew. Streetlights flickered as the suns first rays painted the buildings in gold, and the scent of freshly brewed coffee wafted from a nearby café. A few joggers passed by, their rhythmic footsteps blending with the distant honk of a taxi. Somewhere, a newspaper vendor arranged his stack, glancing at headlines that would soon be devoured by busy commuters. It was a fleeting moment of stillness before the day unfolded in its usual chaos."
+        },
+        {
+            ID: 11,
             url: "components/travelcomponents/content/img/kasol.jpg",
             description: "The soft hum of the city at dawn was a melody only early risers knew. Streetlights flickered as the suns first rays painted the buildings in gold, and the scent of freshly brewed coffee wafted from a nearby café. A few joggers passed by, their rhythmic footsteps blending with the distant honk of a taxi. Somewhere, a newspaper vendor arranged his stack, glancing at headlines that would soon be devoured by busy commuters. It was a fleeting moment of stillness before the day unfolded in its usual chaos."
         },
