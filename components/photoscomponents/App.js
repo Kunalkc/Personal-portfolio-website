@@ -7,17 +7,37 @@ export default function App(){
     const [albums , setalbums] = React.useState(false)
     const [albumselected, selectalbum] = React.useState(0)
 
+    const [selectedimage , selectimage] = React.useState(0)
+    const [description , toggle] = React.useState(0)
+
+    function showdescription(){
+
+        console.log("showdescription called")
+        if(description){
+            toggle(0)
+        }else{
+            toggle(1)
+        }
+    }
+
+    console.log(selectedimage)
 
     function togglealbum(){
         setalbums((prevstate)=>(!prevstate))
     }
 
     function handlebackclick(){
+        if(selectedimage){
+            selectimage(0)
+             exit
+        }
         if(albumselected){ selectalbum(0) }
         if(albums && !albumselected) {setalbums(false)}
     }
 
-
+    function imageselector(number){
+        selectimage(number)
+    }
 
     return(
         <div>
@@ -28,6 +48,10 @@ export default function App(){
             togglealbum = {togglealbum}
             albumselected = {albumselected}
             albumselector = {selectalbum}
+            selectedimage = {selectedimage}
+            selectimage = {imageselector}
+            description = {description}
+            showdescription = {showdescription}
         />
         </div>
     )
