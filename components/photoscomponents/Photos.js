@@ -2,6 +2,7 @@ import React from "react";
 import photosdata from "./content/photosdata";
 export default function Photos(props){
 
+    // to show album tiles on albums page
     const albums = photosdata.map((item)=>{
         return(
             <div onClick={() => (props.albumselector(item.ID))} className="album-tile">
@@ -18,6 +19,7 @@ export default function Photos(props){
     let selectimage;
     let selecttext
 
+    // once an album is selected this code would display photographs
     if(props.albumselected){
   
         let selectedalbumobj
@@ -27,7 +29,6 @@ export default function Photos(props){
                    selectedalbumobj = photosdata[i]
             }
         }
-        console.log(selectedalbumobj.photos)
        phototray = selectedalbumobj.photos.map((item)=>{
             return(
                 <img onClick={() => props.selectimage(item.ID)} className={`image-container ${props.selectedimage === item.ID ? "highlight-image" : "" }`} src={item.url}></img>
@@ -51,7 +52,79 @@ export default function Photos(props){
          phototray = []
     }
 
-    console.log(selecttext)
+// SLIDER CODE
+    const trackRef  = React.useRef()
+    const [mouseDownAt, setMouseDownAt] = React.useState(0);
+    const prevPercentageRef = React.useRef(0);   // stores the last percentage for the image track so that it remembers where to stay
+    const [percentage, setPercentage] = React.useState(0);
+
+
+    const animateSlider = (nextPercentage) => {
+        if (trackRef.current) {
+            trackRef.current.animate(
+                { transform: `translate(${nextPercentage}%, -0%)` },
+                { duration: 1200, fill: "forwards" }
+            );
+
+            for (const image of trackRef.current.getElementsByClassName("image-container")) {
+                image.animate(
+                    { objectPosition: `${100 + nextPercentage}% center` },
+                    { duration: 1200, fill: "forwards" }
+                );
+            }
+        }
+    };
+
+    const handlePointerDown = (e) => {
+        setMouseDownAt(e.clientX);
+    };
+
+    const handlePointerUp = () => {
+        setMouseDownAt(0);
+        prevPercentageRef.current = percentage;
+    };
+
+    const handlePointerMove = (e) => {
+        if (mouseDownAt === 0) return;
+
+        const mouseDelta = e.clientX - mouseDownAt;  // Difference from initial click
+        const maxDelta = window.innerWidth / 2;
+        const newPercentage = (mouseDelta / maxDelta) * 100; // Directly mapped to a range of -100 to 100
+
+        console.log("New Percentage:", newPercentage);
+        console.log("prevPercentageRef.current", prevPercentageRef.current);
+    
+        const nextPercentage = Math.max(Math.min(prevPercentageRef.current + newPercentage, 0), -100);
+        
+       /*  prevPercentageRef.current = nextPercentage;   */
+        setPercentage(nextPercentage);
+        animateSlider(nextPercentage);
+    };
+  // to be able to have same effect on scrolling 
+ 
+  const handleWheel = (e) => {
+    e.preventDefault(); // Prevent default scroll behavior
+
+    const delta = e.deltaY > 0 ? 5 : -5;
+    const nextPercentageUnconstrained = prevPercentageRef.current - delta;
+    const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+    setPercentage(nextPercentage);
+    prevPercentageRef.current = nextPercentage;  // Update ref immediately
+
+    console.log(nextPercentage)
+    animateSlider(nextPercentage);
+};
+
+  React.useEffect(() => {
+    if (props.albumselected) {
+        window.addEventListener("wheel", handleWheel, { passive: false });
+    }
+    return () => {
+        window.removeEventListener("wheel", handleWheel);
+    };
+   }, [props.albumselected]);
+
 
     return(
         <div /* className="main-container" onClick = { props.selectedimage ? props.showdescription : ()=>{}} */
@@ -61,6 +134,9 @@ export default function Photos(props){
             props.selectedimage ? props.showdescription() : null;
           }
         }}
+        onPointerDown={handlePointerDown}   // for the image slider
+        onPointerUp={handlePointerUp}  // for the image slider
+        onPointerMove={handlePointerMove}  // for the image slider
         >
             {props.selectedimage ? selectimage : null} {/* to display full page image */}
             {
@@ -75,7 +151,10 @@ export default function Photos(props){
             }
             
             { props.albumselected ? 
-              <div className={`album-phototray ${props.selectedimage ? "downtray" : ""}`}>
+              <div 
+              ref = {trackRef}
+              className={`album-phototray ${props.selectedimage ? "downtray" : ""}`}
+              >
               {phototray}
               </div> : null
             }
