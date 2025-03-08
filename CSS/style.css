@@ -17,6 +17,7 @@ main{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-style: sans-serif;
 }
 
 body {
@@ -640,14 +641,19 @@ a.navbar_custom:hover{
     padding:4px;
     Overflow: Hidden;
     color: var(--TEXTCOLOR);
-    font-size: clamp(12px, 13px, 16px);;
+    font-size: clamp(10px, 16px, 19px);;
 }
 
 .menuimagecontainer:hover{
     /* animation: 0.2s ease-in-out 0.5s normal forwards grow3 ; */
     width: 120%;
-    margin-left: -10%;
+   /*  margin-left: -10%; */
     transition-delay: 0.2s; 
+}
+.menuimagecontainer:hover img{
+    opacity: 0.7;
+    box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.5);
+
 }
 
 /* .menutextcontainer:hover{
@@ -1101,7 +1107,7 @@ a.navbar_custom:hover{
 .textbox{
       margin:0;
       background-color:var(--TEXTBOX);
-      font-size: clamp(8px, 12px, 20px); 
+      font-size: clamp(6px, 13px, 20px); 
       height: 70vh;
       width:70%;
       color: var(--TEXTCOLOR);
@@ -1110,6 +1116,11 @@ a.navbar_custom:hover{
       border-radius: 2vw;
       box-shadow: var(--SHADOWWHITE);
       text-overflow: ellipsis;
+}
+@media screen and (max-width: 901px) and (min-width: 768px){
+    .textbox{
+    font-size: 11px
+    }
 }
 .referencelink{
       margin:0;
@@ -2293,4 +2304,11 @@ a.icon:hover{
         margin-left: 9px;
         margin-right: 9px;
     }
+}
+
+
+
+.menu-tile-image-small{
+    object-fit: cover;
+    transform: scale(0.5);
 }
