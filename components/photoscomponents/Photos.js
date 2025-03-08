@@ -18,12 +18,10 @@ export default function Photos(props){
     let phototray
     let selectimage;
     let selecttext
-
+    let selectedalbumobj
     // once an album is selected this code would display photographs
     if(props.albumselected){
   
-        let selectedalbumobj
-
         for(let i=0;i<photosdata.length;i++){
             if(photosdata[i].ID === props.albumselected){
                    selectedalbumobj = photosdata[i]
@@ -36,7 +34,7 @@ export default function Photos(props){
         })
 
      
-
+      console.log(props.selectedimage)
         if(props.selectedimage){
 
            for(let i=0; i<selectedalbumobj.photos.length; i++)
@@ -52,7 +50,67 @@ export default function Photos(props){
          phototray = []
     }
 
-// SLIDER CODE
+    function changeimage(event){
+        
+         
+         if (event.key === "ArrowLeft") {console.log("left key")
+        
+         }
+         if (event.key === "ArrowRight") {console.log("right key")}
+
+         console.log(props.selectedimage)
+        if(props.selectedimage){
+            if (event.key === "ArrowLeft") {
+                console.log("handle left click called")
+                if(props.selectedimage!= 1)
+                {
+                    props.selectimage(props.selectedimage - 1)
+                }
+            }
+            
+            if (event.key === "ArrowRight") {
+                console.log("handle right click called")
+                if(props.selectedimage != selectedalbumobj.photos.length)
+                    {
+                        props.selectimage(props.selectedimage + 1)
+                    }
+            }
+        }else{
+            return
+        }
+    }
+   
+    React.useEffect(() => {
+        const handleKeyDown = (e) => {
+          changeimage(e);
+        };
+      
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+      }, [props.selectedimage]);
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SLIDER CODE  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     const trackRef  = React.useRef()
     const [mouseDownAt, setMouseDownAt] = React.useState(0);
     const prevPercentageRef = React.useRef(0);   // stores the last percentage for the image track so that it remembers where to stay
@@ -125,8 +183,11 @@ export default function Photos(props){
     };
    }, [props.albumselected]);
 
+// slider effect end ----------------------------------------------------------------------------------------------------------------------------------
+  
 
-    return(
+
+return(
         <div /* className="main-container" onClick = { props.selectedimage ? props.showdescription : ()=>{}} */
         className="main-container"
         onClick={(e) => {
