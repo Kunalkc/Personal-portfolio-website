@@ -1,34 +1,37 @@
 export default{
     pics:[
-        "components/travelcomponents/content/img/shimla.jfif",
-        "components/travelcomponents/content/img/manali.jpg",
-        "components/travelcomponents/content/img/kasol.jpg",
-        "components/travelcomponents/content/img/bir.jfif",
-        "components/travelcomponents/content/img/rohtang.jpg",
-        "components/travelcomponents/content/img/pondicherry.jpg",
-        "components/travelcomponents/content/img/goa.jpg",
-        "components/travelcomponents/content/img/gokarna.jfif",
-        "components/travelcomponents/content/img/chikmagalur.jpg",
-        "components/travelcomponents/content/img/munnar.jfif",
-        "components/travelcomponents/content/img/kochi.jpg",
-        "components/travelcomponents/content/img/alleppey.jpg",
-        "components/travelcomponents/content/img/kgf.jpg",
-        "components/travelcomponents/content/img/dharamshala.jfif",
-        "components/travelcomponents/content/img/palampur.jpg"
+        "img/theatrepics/smriti3.png",
+"img/theatrepics/chor.png",
+"img/theatrepics/choreo.png",
+"img/theatrepics/day1.png",
+"img/theatrepics/farewell.png",
+"img/theatrepics/farewell2.png",
+"img/theatrepics/mime.png",
+"img/theatrepics/mime1st.png",
+"img/theatrepics/mime1st2.png",
+"img/theatrepics/mime2.png",
+"img/theatrepics/nukkad.png",
+"img/theatrepics/nukkad2.png",
+"img/theatrepics/nukkad3.png",
+"img/theatrepics/photoshoot.png",
+"img/theatrepics/ropar.png",
+"img/theatrepics/ropar2.png",
+"img/theatrepics/smriti1.png",
+"img/theatrepics/smriti2.png"
       ],
     projects:[
            {
              id:1,
              title: "Smriti",
              description: "affaw",
-             thumbnail: "components/travelcomponents/content/img/palampur.jpg",
+             thumbnail: "img/theatrepics/smriti2.png",
              link: "adadad"
            },
            {
             id:1,
             title: "Smriti",
             description: "asdada",
-            thumbnail: "components/travelcomponents/content/img/dharamshala.jfif",
+            thumbnail: "img/theatrepics/smriti2.png",
             link: false
            }
     ]
