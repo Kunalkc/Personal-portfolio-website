@@ -7,6 +7,10 @@ html{
 html, body {
     overflow-x: hidden;
     width: 100%;
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
   }
 main{
     padding:0;
@@ -1469,7 +1473,7 @@ a.navbar_custom:hover{
 }
 
 .destinationimage:nth-child(1){
-    background: url(/img/shangarh.jpg);
+    background: url(/img/photoalbum/photoalbum-fullview/photoalbum/shangarh/DSC05122.jpg);
     background-size: cover;
     background-position: bottom;
 }
@@ -1484,7 +1488,7 @@ a.navbar_custom:hover{
     background-position: center;
 }
 .destinationimage:nth-child(4){
-    background: url(/img/alappuzzha.jpg);
+    background: url(/components/travelcomponents/content/img/alleppey.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1519,7 +1523,7 @@ a.navbar_custom:hover{
     background-position: center;
 }
 .destinationimage:nth-child(11){
-    background: url(/img/palampur.jpg);
+    background: url(/components/travelcomponents/content/img/palampur.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1539,12 +1543,12 @@ a.navbar_custom:hover{
     background-position: center;
 }
 .destinationimage:nth-child(15){
-    background: url(/img/Manali.jpg);
+    background: url(/components/travelcomponents/content/img/manali.jpg);
     background-size: cover;
     background-position: center;
 }
 .destinationimage:nth-child(16){
-    background: url(/img/Rohtang.jpg);
+    background: url(/components/travelcomponents/content/img/rohtang.jpg);
     background-size: cover;
     background-position: center;
 }

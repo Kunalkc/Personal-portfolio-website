@@ -29,7 +29,7 @@ export default function Photos(props){
         }
        phototray = selectedalbumobj.photos.map((item)=>{
             return(
-                <img onClick={() => props.selectimage(item.ID)} className={`image-container ${props.selectedimage === item.ID ? "highlight-image" : "" }`} src={item.url}></img>
+                <img onClick={() => props.selectimage(item.ID)} className={`image-container ${props.selectedimage === item.ID ? "highlight-image" : "" }`} src={item.url} draggable="false"></img>
             )
         })
 

@@ -79,7 +79,21 @@ html, body {
     top: -12px;
     left: 0;
 } */
+.back-button{
+    position: fixed;
+    top: 20px;
+    left: 30px;
+ /*    background-color: rgba(240, 248, 255, 0.081); */
+    border-radius: 1vh;
+    padding: 5px;
+    transition: all 0.1s ease-in-out;
+    z-index: 50;
+}
+.back-button:hover{
 
+    background-color: rgba(240, 248, 255, 0.448);
+
+}
 @media screen and (max-width: 768px){
     .header-tile{
         position: fixed;
@@ -100,6 +114,18 @@ html, body {
     .page-tile{
         position: fixed;
         right:0;
+    }
+
+    .back-button{
+        position: fixed;
+        bottom: 20px;
+        top: 90vh;
+        left: 45vw;
+        background-color: rgba(240, 248, 255, 0.919);
+        border-radius: 1vh;
+        padding: 5px;
+        transition: all 0.1s ease-in-out;
+        z-index: 50;
     }
 }
 
@@ -174,21 +200,7 @@ html, body {
 }
 
 
-.back-button{
-    position: fixed;
-    top: 20px;
-    left: 30px;
- /*    background-color: rgba(240, 248, 255, 0.081); */
-    border-radius: 1vh;
-    padding: 5px;
-    transition: all 0.1s ease-in-out;
-    z-index: 50;
-}
-.back-button:hover{
 
-    background-color: rgba(240, 248, 255, 0.448);
-
-}
 
 /* after clicked on album */
 .album-phototray{
