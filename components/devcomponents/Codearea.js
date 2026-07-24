@@ -130,10 +130,11 @@ export default function codearea(props){
       {props.tabState.get("Education").selected && <Education/>}
       {props.tabState.get("Contact").selected && <Contact/>}
       {props.tabState.get("Full Resume").selected && <><About/>
+        <Education/>
        <Skills/>
       <Experience/>
       <Projects/>
-      <Education/>
+      
       <Contact/> </>
       }
       
