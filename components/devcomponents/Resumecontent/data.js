@@ -14,7 +14,7 @@ export default{
         {
            id: 1,
            position: "Associate Consultant",
-           location: "Oracle Financial Services",
+           location: "Oracle Financial Services Software",
            startdate: new Date(2023, 6, 13),
            enddate: new Date(2024, 5, 8),
            summary:"Customizing Oracle's Flexcube Module as per Requirement of foreign institutional clients, my tasks included understanding their technical requirements and implementing them on the codebase",
@@ -22,10 +22,10 @@ export default{
         {
             id:2,
             position: "Project Intern",
-            location: "Oracle Financial Services",
-            startdate: new Date(2023, 6, 13),
-            enddate: new Date(2025, 5, 8),
-            summary:"nothing they slow af people",
+            location: "Oracle Financial Services Software",
+            startdate: new Date(2022, 6, 1),
+            enddate: new Date(2022, 7, 26),
+            summary:"Implementation tool-kit for a Leading Bank in Brazil",
         }
      ],
      proj:[
@@ -48,8 +48,15 @@ export default{
         email: "",
      },
      ed:[
+      {
+         Degree: "M.tech Computer Science and Engineering",
+         College: "IIT Hyderabad",
+         Cgpi: "",
+       },
         {
-
+             Degree: "B.tech Computer Science and Engineering",
+             College: "NIT Hamirpur",
+             Cgpi: "8.65",
         },
         {
 
