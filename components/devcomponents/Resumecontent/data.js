@@ -32,34 +32,48 @@ export default{
         {},
         {}
      ],
-     ab: "",
+     ab: "Hey, I’m a software developer with a background in Computer Science. Passionate about building products that make an impact and always looking forward to collaborating with creative minds.",
      skl:[
         {
-            name: "",
-            url:""
+            id:1,
+            name: "Data Structures and Algorithms",
+        },
+         {   id:2,
+         name: "C, C++, SQL, PL/SQL",
+        },
+         {   id:3,
+            name: "html, css, javascript",
+        },
+         {
+          id:4,
+          name: "React.js, React-Native, JSX, Bootstrap, Tailwind",
+        },
+         {
+            id:5,
+            name: "Express.js, Node.js, MongoDB, SQL, Mongoose",
         },
         {
-            name: "",
-            url:""
+            id:6,
+            name: "Github, Matlab, maven, Postman, Jira, Cloudinary, Multer, Google-auth", 
         }
+        
      ],
      cont:{
-        ph: "",
-        email: "",
+        ph: "7018453549",
+        email: "Kunalchandel09@gmail.com",
      },
      ed:[
-      {
-         Degree: "M.tech Computer Science and Engineering",
-         College: "IIT Hyderabad",
-         Cgpi: "",
-       },
-        {
+          {
+            id:1,
+            Degree: "M.tech Computer Science and Engineering",
+            College: "IIT Hyderabad",
+            Cgpi: "",
+          },
+          {
+             id:2,
              Degree: "B.tech Computer Science and Engineering",
              College: "NIT Hamirpur",
              Cgpi: "8.65",
-        },
-        {
-
-        }
+          }
      ]
 }
