@@ -29,8 +29,27 @@ export default{
         }
      ],
      proj:[
-        {},
-        {}
+        {
+         id:0,
+         Title: "Personal Portfolio Website",
+         description: "A Multipurpose 5-in-one personal portfolio website for myself. ",
+         tech: "Html, CSS, React.js, Javascript",
+         github: "https://github.com/Kunalkc/Personal-portfolio-website"
+        },
+        {
+         id: 1,
+         Title: "Vastra",
+         description: "A full stack application on a startup idea that enables people to create luxury brands",
+         tech: "Html, CSS, React.js, Javascript, Node.js, JSX, Express.js, MongoDB, Mongoose",
+         github: "https://github.com/Kunalkc/Vastra"
+        },
+        {
+         id: 2,
+         Title: "FF Gym website",
+         description: "A front-end website for a local gym in my neighborhood.",
+         tech: "Html, CSS, React.js, Javascript, Tailwind",
+         github: "https://github.com/Kunalkc/Fettle-Phoenix-Gym"
+        }
      ],
      ab: "Hey, I’m a software developer with a background in Computer Science. Passionate about building products that make an impact and always looking forward to collaborating with creative minds.",
      skl:[
@@ -65,13 +84,13 @@ export default{
      ed:[
           {
             id:1,
-            Degree: "M.tech Computer Science and Engineering",
+            Degree: "M.Tech - Computer Science and Engineering",
             College: "IIT Hyderabad",
             Cgpi: "",
           },
           {
              id:2,
-             Degree: "B.tech Computer Science and Engineering",
+             Degree: "B.Tech - Computer Science and Engineering",
              College: "NIT Hamirpur",
              Cgpi: "8.65",
           }
