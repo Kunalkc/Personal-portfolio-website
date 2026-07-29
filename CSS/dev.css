@@ -441,6 +441,11 @@ body{
     background-color: 		var(--CODEAREACOLOR);
 }
 
+.minimap .single-xp{
+    font-size: 2px;
+    text-wrap: wrap;
+}
+
 .close-icon{
   /*   position: absolute;
     right: 2px;
