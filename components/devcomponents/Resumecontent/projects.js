@@ -10,7 +10,7 @@ export default function Projects(){
         <p>{obj.description}</p>
         <p>Tech: {obj.tech}</p>
         <p>
-          <a href={obj.link}>
+          <a href={obj.github}>
           Github Link
           </a>    
         </p>
