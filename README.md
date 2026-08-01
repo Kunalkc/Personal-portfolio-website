@@ -43,6 +43,9 @@ This portfolio website is a platform to showcase the developer's skills, project
 
 ---
 
+<img src="./ss/6.png" alt="Standout Theme 1" width="500px">  
+<img src="./ss/8.png" alt="Standout Theme 2" width="500px">
+
 ## React Reusable Components
 
 The website is built using React reusable components to ensure modularity and maintainability example:
@@ -67,7 +70,7 @@ The website is built using React reusable components to ensure modularity and ma
        );
      });
      ```
-![Alt Text](./ss/15.png)
+<img src="./ss/15.png" alt="Standout Theme 2" width="500px">
 
 ## THEMES FOR DEV-PORTFOLIO
 
@@ -77,9 +80,29 @@ Various themes have been provided to view the dev-portfolio - implemented using 
 <img src="./ss/16.png" alt="Theme Menu" width="200px">
 
 **Standout Themes**  
+
 <img src="./ss/3.png" alt="Standout Theme 1" width="500px">  
 <img src="./ss/4.png" alt="Standout Theme 2" width="500px">
 
-**Responsive Scroll Bar**
-<img src="./ss/16.png" alt="Theme Menu" width="300px">
+## RESPONSIVE SCROLL BAR
+
+<img src="./ss/17.png" alt="Theme Menu" width="300px">
+
+
+
+## DEDICATED PHOTO GALLERY IMPLEMENTATION
+
+<img src="./ss/18.png" alt="Standout Theme 1" width="500px">  
+<img src="./ss/19.png" alt="Standout Theme 2" width="500px">
+<img src="./ss/20.png" alt="Standout Theme 1" width="500px">  
+<img src="./ss/21.png" alt="Standout Theme 2" width="500px">
+
+## MOBILE FRIENDLY AND ADAPTIVE DESIGN
+
+<img src="./ss/9.png" alt="Theme Menu" width="200px">
+<img src="./ss/10.png" alt="Theme Menu" width="200px">
+<img src="./ss/11.png" alt="Theme Menu" width="200px">
+<img src="./ss/12.png" alt="Theme Menu" width="200px">
+<img src="./ss/13.png" alt="Theme Menu" width="200px">
+<img src="./ss/14.png" alt="Theme Menu" width="200px">
 ---
