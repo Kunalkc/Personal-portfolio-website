@@ -4,17 +4,23 @@ This is a **Personal Portfolio Website** built using **React**. The website show
 
 ---
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [React Reusable Components](#react-reusable-components)
-5. [Setup Instructions](#setup-instructions)
-6. [Folder Structure](#folder-structure)
-7. [Screenshots](#screenshots)
-8. [Mobile Responsiveness](#mobile-responsiveness)
-9. [License](#license)
+## Live Website
 
+**Visit the website here:**
+
+**https://kunalchandel.com**
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Live Website](#live-website)
+3. [Features](#features)
+4. [Technologies Used](#technologies-used)
+5. [React Reusable Components](#react-reusable-components)
+6. [Themes for Dev Portfolio](#themes-for-dev-portfolio)
+7. [Responsive Scroll Bar](#responsive-scroll-bar)
+8. [Dedicated Photo Gallery Implementation](#dedicated-photo-gallery-implementation)
+9. [Mobile Friendly and Adaptive Design](#mobile-friendly-and-adaptive-design)
 ---
 
 ## Introduction
