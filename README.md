@@ -1,6 +1,6 @@
 #PERSONAL PORTFOLIO WEBSITE
 
-This is a **Personal Portfolio Website** built using **React**. The website showcases my projects, skills, and experience in a clean and professional layout. It is designed to be fully responsive and optimized for both desktop and mobile devices.
+This is a **Personal Portfolio Website** built using **React**. The website showcases my projects, skills, and experience in a clean and professional layout. It is designed to be fully responsive and optimized for both desktop and mobile devices and built with impeccable attention to detail.
 
 ---
 
@@ -25,8 +25,8 @@ This portfolio website is a platform to showcase the developer's skills, project
 
 ## Features
 
-- **Projects Section**: Displays a list of projects with descriptions, technologies used, and GitHub links.
-- **Skills Section**: Highlights the developer's technical skills in a clean and organized layout.
+- **Developer Portfolio**: Hosts an interactive Developer portfolio build with React with easy updates to Resume
+- **5 in 1 Website**: website hosts a separate photography webpage and a responsive home page apart from dev-portfolio.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Reusable Components**: Built with React reusable components to ensure modularity and scalability.
 - **Modern UI/UX**: Clean and professional design with a focus on user experience.
@@ -45,7 +45,7 @@ This portfolio website is a platform to showcase the developer's skills, project
 
 ## React Reusable Components
 
-The website is built using React reusable components to ensure modularity and maintainability. Here are some examples:
+The website is built using React reusable components to ensure modularity and maintainability example:
 
 1. **Projects Component**:
    - The `Projects` component dynamically renders a list of projects using data from a `data.js` file.
@@ -67,22 +67,16 @@ The website is built using React reusable components to ensure modularity and ma
        );
      });
      ```
+![Alt Text](./ss/15.png)
 
-2. **Skills Component**:
-   - The `Skills` component dynamically renders a list of skills using data from the same `data.js` file.
-   - Each skill is displayed as a simple text item.
-   - Example:
-     ```javascript
-     const skl = data.skl.map((obj) => {
-       return (
-         <div className="single-xp" key={obj.id}>
-           <p>{obj.name}</p>
-         </div>
-       );
-     });
-     ```
+## THEMES FOR DEV-PORTFOLIO
 
-3. **Data-Driven Design**:
-   - All data (e.g., projects, skills) is stored in a `data.js` file, making it easy to update or add new content without modifying the components.
+Various themes have been provided to view the dev-portfolio - implemented using React Component base Architecture. User can select one of the themes and it shall apply instantly
 
+**Theme Menu** 
+![Alt Text](./ss/16.png)
+
+**Standout Themes**
+![Alt Text](./ss/3.png) 
+![Alt Text](./ss/4.png)
 ---
