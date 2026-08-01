@@ -99,10 +99,12 @@ Various themes have been provided to view the dev-portfolio - implemented using 
 
 ## MOBILE FRIENDLY AND ADAPTIVE DESIGN
 
-<img src="./ss/9.png" alt="Theme Menu" width="200px">
-<img src="./ss/10.png" alt="Theme Menu" width="200px">
-<img src="./ss/11.png" alt="Theme Menu" width="200px">
-<img src="./ss/12.png" alt="Theme Menu" width="200px">
-<img src="./ss/13.png" alt="Theme Menu" width="200px">
-<img src="./ss/14.png" alt="Theme Menu" width="200px">
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="./ss/9.png" alt="Theme Menu" width="200px">
+  <img src="./ss/10.png" alt="Theme Menu" width="200px">
+  <img src="./ss/11.png" alt="Theme Menu" width="200px">
+  <img src="./ss/12.png" alt="Theme Menu" width="200px">
+  <img src="./ss/13.png" alt="Theme Menu" width="200px">
+  <img src="./ss/14.png" alt="Theme Menu" width="200px">
+</div>
 ---
