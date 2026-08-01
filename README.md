@@ -73,10 +73,13 @@ The website is built using React reusable components to ensure modularity and ma
 
 Various themes have been provided to view the dev-portfolio - implemented using React Component base Architecture. User can select one of the themes and it shall apply instantly
 
-**Theme Menu** 
-![Alt Text](./ss/16.png)
+**Theme Menu**  
+<img src="./ss/16.png" alt="Theme Menu" width="200px">
 
-**Standout Themes**
-![Alt Text](./ss/3.png) 
-![Alt Text](./ss/4.png)
+**Standout Themes**  
+<img src="./ss/3.png" alt="Standout Theme 1" width="500px">  
+<img src="./ss/4.png" alt="Standout Theme 2" width="500px">
+
+**Responsive Scroll Bar**
+<img src="./ss/16.png" alt="Theme Menu" width="300px">
 ---
